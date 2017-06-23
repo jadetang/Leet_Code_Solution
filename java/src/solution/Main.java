@@ -1,15 +1,18 @@
+/*
 package solution;
 
+*/
 /**
  * @author sanguan.tangsicheng on 2017/5/25 上午11:35
- */
+ *//*
+
 public class Main {
 
     public static void main(String[] args) {
         System.out.println("abcd".contains("ad"));
     }
 
-    public static class User{
+    public static class USser{
 
         String name;
 
@@ -28,3 +31,4 @@ public class Main {
 
     }
 }
+*/
