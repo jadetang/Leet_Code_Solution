@@ -70,7 +70,7 @@ public class _79_Word_Search implements Array, Backtracking, Medium {
                 if (help(acc.append(point.getChar()), path,point)) {
                     return true;
                 } else {
-                    path.remove(point);
+                    path.remove(point);  //记得退栈
                     acc.deleteCharAt(acc.length() - 1);
                 }
 

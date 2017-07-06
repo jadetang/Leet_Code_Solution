@@ -5,90 +5,56 @@ import ds.ListNode;
 /**
  * @author sanguan.tangsicheng on 16/7/16 下午8:05
  */
-public class    _25_Reverse_Nodes_in_k_Group {
+public class _25_Reverse_Nodes_in_k_Group {
+
     public ListNode reverseKGroup(ListNode head, int k) {
-        if( head == null ){
-            return null;
-        }
-        ListNode temp = head;
-        int length = 1;
-        while(temp.next != null ){
-            length++;
-            temp = temp.next;
-        }
-        int group = length / k;
-        if( group < 1 ){
-            return head;
-        }
-        //System.out.println("group:"+group);
-        ListNode[] groups = new ListNode[group];
-        temp = head;
-        for( int i=0 ;i< group;i++){
-            for(int j=0; j< k; j++){
-                if( j == 0 ){
-                    groups[i] = temp;
+        if (head == null || head.next == null || k < 2) { return head; }
 
-                    if( j == k - 1 && temp != null   ){
-                        ListNode t = temp;
-                        temp = temp.next;
-                        t.next = null;
-                    }else {
-                        temp = temp.next;
-                    }
-                    continue;
-                }
-                if( j == k - 1 ){
-                    ListNode t = temp;
-                    temp = temp.next;
-                    t.next = null;
-                    continue;
-                }
-                temp = temp.next;
+        ListNode dummy = new ListNode(0);
+        dummy.next = head;
+
+        ListNode tail = dummy, prev = dummy, temp;
+        int count;
+        while (true) {
+            count = k;
+            while (count > 0 && tail != null) {
+                count--;
+                tail = tail.next;
             }
-        }
-        for( int i= 0; i< groups.length ; i++){
-            groups[i ] = reverse(groups[i]);
-        }
-        for( int i= 0; i <  groups.length - 1; i++){
-            concat(groups[i],groups[i+1]);
-        }
-        concat(groups[group-1],temp);
-        return groups[0];
-    }
+            if (tail == null) {
+                break;//Has reached the end
+            }
 
-    public void concat(ListNode head,ListNode tail){
-        ListNode temp = head;
-        while(temp.next != null ){
-            temp = temp.next;
-        }
-        temp.next = tail;
-    }
+            head = prev.next;//for next cycle
+            // prev-->temp-->...--->....--->tail-->....
+            // Delete @temp and insert to the next position of @tail
+            // prev-->...-->...-->tail-->head-->...
+            // Assign @temp to the next node of @prev
+            // prev-->temp-->...-->tail-->...-->...
+            // Keep doing until @tail is the next node of @prev
+            while (prev.next != tail) {
+                temp = prev.next;//Assign
+                prev.next = temp.next;//Delete
 
+                temp.next = tail.next;
+                tail.next = temp;//Insert
 
-    public   ListNode reverse(ListNode head) {
-        if(head==null) {
-            return null;
+            }
+
+            tail = head;
+            prev = head;
+
         }
-        ListNode p = head;
-        ListNode q = head.next;
-        p.next=null; //这个必须的~~~，否则链表就成有环的了。
-        while(q!=null) {
-            ListNode temp = q.next;
-            q.next = p;
-            p = q;
-            q = temp;
-        }
-        return p;
+        return dummy.next;
+
     }
 
     public static void main(String[] args) {
-        ListNode l  = new ListNode(1);
+        ListNode l = new ListNode(1);
         ListNode l2 = new ListNode(2);
         l.next = l2;
         _25_Reverse_Nodes_in_k_Group s = new _25_Reverse_Nodes_in_k_Group();
-        s.reverseKGroup(l,2);
+        s.reverseKGroup(l, 2);
     }
-
-
 
 }

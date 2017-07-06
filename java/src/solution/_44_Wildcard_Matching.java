@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * Implement wildcard pattern matching with support for '?' and '*'.
  * @author sanguan.tangsicheng on 2016/11/27 上午10:22
  */
 public class _44_Wildcard_Matching {

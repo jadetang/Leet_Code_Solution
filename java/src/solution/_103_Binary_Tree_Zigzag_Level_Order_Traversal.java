@@ -1,10 +1,14 @@
 package solution;
 
-import ds.TreeNode;
-
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Map;
 import java.util.Stack;
+
+import ds.TreeNode;
 
 /**
  * @author sanguan.tangsicheng on 2016/12/17 上午10:57
@@ -44,6 +48,40 @@ public class _103_Binary_Tree_Zigzag_Level_Order_Traversal {
         }
         return result;
     }
+
+    public List<List<Integer>> zigzagLevelOrder2(TreeNode root) {
+        if (root == null) {
+            return Collections.emptyList();
+        }
+        Map<Integer, List<Integer>> acc = new HashMap<>();
+
+        dfs(acc, root, 0);
+
+        acc.forEach((key, value) -> {
+            if (key % 2 == 1) {
+                Collections.reverse(value);
+
+            }
+        });
+        return new ArrayList<>(acc.values());
+
+    }
+
+
+    private void dfs(Map<Integer, List<Integer>> acc, TreeNode root, int level) {
+        if (root == null) {
+            return;
+        } else {
+            if (!acc.containsKey(level)) {
+                acc.put(level, new LinkedList<>());
+            }
+            acc.get(level).add(root.val);
+            dfs(acc, root.left, level + 1);
+            dfs(acc, root.right, level + 1);
+
+        }
+    }
+
 
 
     public static void main(String[] args) {

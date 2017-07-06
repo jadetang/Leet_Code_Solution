@@ -3,77 +3,44 @@ package solution;
 import ds.TreeNode;
 
 /**
+ *
+ * In a Preorder sequence, leftmost element is the root of the tree. So we know ‘A’ is root for given sequences. By searching ‘A’ in Inorder sequence, we can find out all elements on left side of ‘A’ are in left subtree and elements on right are in right subtree. So we know below structure now.
+
+ A
+ /   \
+ /       \
+ D B E     F C
+ We recursively follow above steps and get the following tree.
+
+ A
+ /   \
+ /       \
+ B         C
+ / \        /
+ /     \    /
+ D       E  F
+ * http://www.geeksforgeeks.org/construct-tree-from-given-inorder-and-preorder-traversal/
  * @author sanguan.tangsicheng on 2017/6/3 上午9:06
  */
 public class _105_Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal {
 
-    int[] preorder;
-
-    int[] inorder;
-
     public TreeNode buildTree(int[] preorder, int[] inorder) {
+        return helper(0, 0, inorder.length - 1, preorder, inorder);
+    }
 
-        if (preorder == null || inorder == null || preorder.length == 0 || inorder.length == 0) {
+    public TreeNode helper(int preStart, int inStart, int inEnd, int[] preorder, int[] inorder) {
+        if (preStart > preorder.length - 1 || inStart > inEnd) {
             return null;
-        } else {
-            this.preorder = preorder;
-            this.inorder = inorder;
-            return build(0, preorder.length - 1, 0, inorder.length - 1);
         }
-    }
-
-    private TreeNode build(int preorderStart, int preorderEnd, int inorderStart, int inorderEnd) {
-        if (preorderStart == preorderEnd && inorderStart == inorderEnd) {
-            assert preorder[preorderStart] == inorder[inorderStart];
-            return new TreeNode(preorder[preorderStart]);
-        } else {
-            int rootVal = preorder[preorderStart];
-            TreeNode cur = new TreeNode(rootVal);
-            int nodeInorderIndex = findIndex(this.inorder, rootVal);
-            if (nodeInorderIndex == inorderStart) {
-                cur.left = null;
-                cur.right = build(preorderStart + 1, preorderEnd, nodeInorderIndex+1, inorderEnd);
-                return cur;
-
-            } else if (nodeInorderIndex == inorderEnd) {
-
-                cur.left = build(preorderStart + 1, preorderEnd, inorderStart, nodeInorderIndex-1);
-
-                cur.right = null;
-
-                return cur;
-            } else {
-
-                int lefMost = inorder[nodeInorderIndex + 1];
-
-                int preOrderLeftMostIndex = findIndex(preorder, lefMost);
-
-                cur.left = build(preorderStart + 1, preOrderLeftMostIndex - 1, inorderStart, nodeInorderIndex - 1);
-
-                cur.right = build(preOrderLeftMostIndex , preorderEnd, nodeInorderIndex + 1, inorderEnd);
-
-                return cur;
-            }
-
-        }
-
-    }
-
-    private int findIndex(int[] array, int target) {
-        for (int i = 0; i < array.length; i++) {
-            if (array[i] == target) {
-                return i;
+        TreeNode root = new TreeNode(preorder[preStart]);
+        int inIndex = 0; // Index of current root in inorder
+        for (int i = inStart; i <= inEnd; i++) {
+            if (inorder[i] == root.val) {
+                inIndex = i;
             }
         }
-        throw new RuntimeException();
+        root.left = helper(preStart + 1, inStart, inIndex - 1, preorder, inorder);
+        root.right = helper(preStart + inIndex - inStart + 1, inIndex + 1, inEnd, preorder, inorder);
+        return root;
     }
-
-    public static void main(String[] args) {
-        _105_Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal q
-            = new _105_Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal();
-        int[] preOrder = new int[] {3, 2, 1,4};
-        int[] inOrder = new int[] {1, 2, 3,4};
-        System.out.println(q.buildTree(preOrder, inOrder));
-    }
-
 }

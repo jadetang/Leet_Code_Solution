@@ -19,6 +19,8 @@ import java.util.Set;
  */
 public class _128_Longest_Consecutive_Sequence {
 
+
+    //如果要去 on 的算法，就用 hashset，否则先用排序
     public int longestConsecutive(int[] num) {
         Set set = new HashSet();
         for (int n : num) {

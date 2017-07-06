@@ -19,6 +19,11 @@ import tag.Greedy;
  */
 public class _55_Jump_Game implements Array, Greedy {
 
+    /**
+     * 直接遍历，不断更新可以跳得远的距离。
+     * @param nums
+     * @return
+     */
     public boolean canJump(int[] nums){
         if (nums.length == 1){
             return true;

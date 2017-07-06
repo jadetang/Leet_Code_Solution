@@ -1,4 +1,4 @@
-package other;
+package company.facebook;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
@@ -32,6 +32,8 @@ public class TernaryExpressionToBinaryTree {
 
     }
 
+
+    //a?b?c:d:e
 
     private static TreeNode convertHelp(char[] expression ){
 

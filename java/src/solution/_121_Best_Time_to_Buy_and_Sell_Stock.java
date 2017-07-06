@@ -5,11 +5,10 @@ package solution;
  */
 public class _121_Best_Time_to_Buy_and_Sell_Stock {
 
-    public int maxProfit(int[] prices) {
-        return drive(prices, 0, prices.length - 1);
-    }
 
-    public int maxProfit2(int[] prices) {
+
+    // 记录当前遇见的最小的值
+    public int maxProfit(int[] prices) {
         if (prices.length == 0) {
             return 0;
         } else {
@@ -22,31 +21,6 @@ public class _121_Best_Time_to_Buy_and_Sell_Stock {
             return result;
         }
 
-    }
-
-    private int drive(int[] prices, int l, int r) {
-        if (l >= r) {
-            return 0;
-        } else {
-            int result = Integer.MIN_VALUE;
-            int minIndex = l;
-            int maxIndex = r;
-            for (int i = l; i <= r; i++) {
-                if (prices[i] >= prices[maxIndex]) {
-                    maxIndex = i;
-                }
-                if (prices[i] < prices[minIndex] && i <= maxIndex) {
-                    minIndex = i;
-                }
-
-                if (prices[i] < prices[minIndex] && i > maxIndex) {
-                    return Math.max(result, drive(prices, i, prices.length - 1));
-                } else {
-                    result = Math.max(result, prices[maxIndex] - prices[minIndex]);
-                }
-            }
-            return result;
-        }
     }
 
     public static void main(String[] args) {

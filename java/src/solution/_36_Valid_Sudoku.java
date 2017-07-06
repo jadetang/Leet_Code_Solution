@@ -1,64 +1,22 @@
 package solution;
 
+import java.util.HashSet;
+import java.util.Set;
+
 /**
  * @author sanguan.tangsicheng on 2016/11/12 下午5:39
  */
 public class _36_Valid_Sudoku {
     public boolean isValidSudoku(char[][] board) {
-        for( int i = 0 ; i < 9 ; i++){
-            if ( ! validRow( board[i] ) ){
-                return false;
-            }
-            if( ! validColumn(board,i)){
-                return false;
-            }
-            if( ! validArea(board,i)){
-                return false;
-            }
-        }
-        return true;
-    }
-
-    private boolean validArea(char[][] board,int num){
-        int[] hash = new int[9];
-        int rowOffset = 3* (num / 3 );
-        int colOffset = 3 * (num % 3);
-        for( int i = 0 ; i < 3 ; i++ ){
-            for( int j = 0; j < 3; j++){
-                if(board[rowOffset+i][colOffset+j] == '.') continue;
-                if(hash[board[rowOffset+i][colOffset+j] - '0'] > 0 ){
-                    return false;
-                }else{
-                    hash[board[rowOffset+i][colOffset+j] - '0']++;
-                }
-            }
-        }
-        return true;
-    }
-
-
-
-    private boolean validRow(char[] row){
-        int[] hash = new int[9];
-        for( int i = 0; i< 9 ; i++){
-            if (row[i] == '.') continue;
-            if(hash[row[i] - '0'] > 0 ){
-                return false;
-            }else{
-                hash[row[i] - '0']++;
-            }
-        }
-        return true;
-    }
-
-    private boolean validColumn(char[][] board,int column){
-        int[] hash = new int[9];
-        for( int i = 0; i<9 ;i++){
-            if( board[i][column] == '.') continue;
-            if(hash[board[i][column] -'0'] > 0){
-                return false;
-            }else{
-                hash[board[i][column] -'0']++;
+        Set seen = new HashSet();
+        for (int i=0; i<9; ++i) {
+            for (int j=0; j<9; ++j) {
+                char number = board[i][j];
+                if (number != '.')
+                    if (!seen.add(number + " in row " + i) ||
+                        !seen.add(number + " in column " + j) ||
+                        !seen.add(number + " in block " + i/3 + "-" + j/3))
+                        return false;
             }
         }
         return true;

@@ -1,11 +1,12 @@
 package solution;
 
-import java.util.Arrays;
-
 /**
  * @author sanguan.tangsicheng on 16/9/14 下午8:44
  */
 public class _27_Remove_Element {
+
+
+    //每次都把数组的最后一位元素放到前面来，避免了数组的 copy
     public int removeElement(int[] nums, int val) {
         int i = 0;
         int n = nums.length;

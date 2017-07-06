@@ -11,6 +11,7 @@ import ds.Interval;
  */
 public class _56_Merge_Intervals {
 
+
     public List<Interval> merge(List<Interval> intervals) {
 
         Collections.sort(intervals, (o1, o2) ->  {
