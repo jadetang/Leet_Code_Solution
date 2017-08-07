@@ -62,8 +62,8 @@ public class _46_Permutations {
 
     public static void main(String[] args) {
         _46_Permutations q = new _46_Permutations();
-        System.out.println(q.permute(new int[]{1,2,3}));
-        System.out.println(q.permute2(new int[]{1,2,3}));
+        System.out.println(q.permute(new int[]{1,1,2,3}));
+        System.out.println(q.permute2(new int[]{1,1,2,3}));
     }
 
 

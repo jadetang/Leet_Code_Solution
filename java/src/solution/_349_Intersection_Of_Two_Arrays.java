@@ -1,6 +1,11 @@
 package solution;
 
-import java.util.*;
+import util.Util;
+
+import java.util.Arrays;
+import java.util.Set;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 /**
  * @author sanguan.tangsicheng on 16/7/12 上午10:46
@@ -9,15 +14,9 @@ public class _349_Intersection_Of_Two_Arrays {
 
     public int[] intersection(int[] nums1, int[] nums2) {
 
-        Set<Integer> set1 = toSets(nums1);
-        Set<Integer> set2 = toSets(nums2);
-        Iterator<Integer> it = set1.iterator();
-        while (it.hasNext()){
-            Integer i = it.next();
-            if( !set2.contains(i)){
-                it.remove();
-            }
-        }
+        Set<Integer> set1 = IntStream.of(nums1).boxed().collect(Collectors.toSet());
+        Set<Integer> set2 = IntStream.of(nums2).boxed().collect(Collectors.toSet());
+        set1.retainAll(set2);
         return toArray(set1);
     }
 
@@ -30,19 +29,37 @@ public class _349_Intersection_Of_Two_Arrays {
         return result;
     }
 
-    private Set<Integer> toSets(int[] nums){
-        Set<Integer> set = new HashSet<>();
-        for (int i : nums) {
-            set.add(i);
+    public int[] intersection2(int[] nums1, int[] nums2){
+        Arrays.sort(nums1);
+        Arrays.sort(nums2);
+        int i = 0;
+        int j = 0;
+        IntStream.Builder b = IntStream.builder();
+        while ( i < nums1.length && j < nums2.length){
+            if (nums1[i] < nums2[j]){
+                i++;
+            }else if (nums1[i] > nums2[j]){
+                j++;
+            }else {
+                b.accept(nums1[i]);
+                i++;
+                j++;
+            }
         }
-        return set;
+        return b.build().toArray();
     }
 
+    //还可以先排序一个，然后 2 分查找一个
+
+
+
     public static void main(String[] args) {
+
         _349_Intersection_Of_Two_Arrays q = new _349_Intersection_Of_Two_Arrays();
-        int[] nums1 = new int[]{2,1};
-        int[] nums2 = new int[]{1,2};
-        q.intersection(nums1,nums2);
+        int[] nums1 = new int[]{0,1,1,2,2,5};
+        int[] nums2 = new int[]{0,1,2,2,2,6};
+        Util.print(q.intersection(nums1,nums2));
+        Util.print(q.intersection2(nums1,nums2));
     }
 
 }

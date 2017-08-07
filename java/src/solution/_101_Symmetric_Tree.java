@@ -1,14 +1,14 @@
 package solution;
 
+import ds.TreeNode;
+
 import java.util.LinkedList;
 import java.util.Queue;
-
-import ds.TreeNode;
 
 /** 还有一种方式，前序遍历和后序遍历一遍，如果两个相同，表示是一样的。
  * @author sanguan.tangsicheng on 2016/11/12 下午8:31
  */
-public class _101_Symmetric_Tree {
+public class    _101_Symmetric_Tree {
     public boolean isSymmetric(TreeNode root) {
         if ( root == null){
             return true;
@@ -28,7 +28,6 @@ public class _101_Symmetric_Tree {
             return isSame(left.left,right.right) && isSame(left.right,right.left);
         }
     }
-
 
     //遍历的方式
     public boolean isSymmetric2(TreeNode root) {

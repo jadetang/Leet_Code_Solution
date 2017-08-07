@@ -1,5 +1,10 @@
 package solution;
 
+import util.Assert;
+
+import java.util.LinkedList;
+import java.util.List;
+
 /**
  * @author sanguan.tangsicheng on 2017/7/4 上午7:49
  */
@@ -69,6 +74,37 @@ public class _208_Trie {
         }
     }
 
+    public List<String> prefix(String prefix){
+        List<String> res = new LinkedList<>();
+        if (prefix == null || prefix.length() == 0){
+            return res;
+        }else {
+            Node n = root;
+            for (char c: prefix.toCharArray()){
+                if ( (n = n.get(c) ) == null ){
+                    return res;
+                }
+            }
+            traverse(res,n);
+            return res;
+        }
+
+
+    }
+
+    private void traverse(List<String> res, Node n) {
+        if (n == null ){
+            return;
+        }else {
+            if (n.value != null) {
+                res.add(n.value);
+            }
+            for (Node x : n.data){
+                traverse(res,x);
+            }
+        }
+    }
+
     public static class Node {
 
         Node[] data;
@@ -99,5 +135,16 @@ public class _208_Trie {
         }
 
     }
+
+    public static void main(String[] args) {
+        _208_Trie trie = new _208_Trie();
+        trie.insert("hack");
+        trie.insert("hac");
+        Assert.assertEqual(2,trie.prefix("hac").size());
+        Assert.assertEqual(1,trie.prefix("hack").size());
+        Assert.assertEqual(0,trie.prefix("x").size());
+    }
+
+
 
 }

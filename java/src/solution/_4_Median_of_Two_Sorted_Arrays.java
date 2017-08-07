@@ -33,4 +33,9 @@ public class _4_Median_of_Two_Sorted_Arrays {
         }
     }
 
+    public static void main(String[] args) {
+        long a = 10L;
+        long[] l  = new long[(int)a];
+    }
+
 }

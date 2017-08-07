@@ -24,7 +24,7 @@ public class _53_Maximum_Subarray {
         int maxSoFar = A[0];
         int maxEndingHere = A[0];
 
-        for (int i = 0; i < A.length; i++) {
+        for (int i = 1; i < A.length; i++) {
             //如果A[i]是负数，那么 maxEndingHear 就不会更新。如果A[i]是正数，maxEndingHere 是负数，就直接取A[i]
             maxEndingHere = Math.max(maxEndingHere+A[i],A[i]);
             maxSoFar = Math.max(maxSoFar,maxEndingHere);

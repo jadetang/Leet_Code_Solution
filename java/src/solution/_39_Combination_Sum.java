@@ -1,10 +1,8 @@
 package solution;
 
 import java.util.Arrays;
-import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Set;
 
 /** 组合，不考虑顺序
  * @author sanguan.tangsicheng on 2016/11/19 下午11:17
@@ -26,6 +24,7 @@ public class _39_Combination_Sum {
 
 
     private void help(List<List<Integer>> acc, List<Integer> tempList, int cur, int start) {
+        System.out.println(tempList);
         if (cur == target) {
             acc.add(new LinkedList<>(tempList));
         } else if (cur > target) {
@@ -40,8 +39,10 @@ public class _39_Combination_Sum {
     }
 
     public static void main(String[] args) {
-        Set<Integer> s = new HashSet<>();
-        List<Integer>  l = new LinkedList<>(s);
+
+        _39_Combination_Sum q = new _39_Combination_Sum();
+        int[] a = new int[ ]{2, 3, 6, 7};
+        q.combinationSum(a,7);
 
 
 

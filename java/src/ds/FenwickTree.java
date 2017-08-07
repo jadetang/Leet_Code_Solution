@@ -17,6 +17,7 @@ public class FenwickTree {
     public void update(int i, int value) {
         int index = i + 1;
         while (index < bit.length) {
+            System.out.println(String.format("[%d,%d]", index,value));
             bit[index] += value;
             index += index & (-index);
         }
@@ -33,7 +34,7 @@ public class FenwickTree {
     }
 
     public static void main(String[] args) {
-        int freq[] = {-2,0,3,-5,2,-1};
+        int freq[] = {1,2,3,4,5};
         FenwickTree tree = new FenwickTree(freq);
         System.out.println(tree.getSum(0));
         System.out.println(tree.getSum(2));
