@@ -8,27 +8,27 @@ import java.util.Set;
  */
 public class _633_Sum_of_Square_Numbers {
 
-    public static boolean judgeSquareSum(int c) {
-        Set<Integer> set = new HashSet<>();
-        for (int i = 0; i * i <= c; i++) {
-            int temp = i * i;
-            if (set.contains(c - temp)) {
-                return true;
-            } else if (temp + temp == c) {
-                return true;
-            }
-            set.add(temp);
-        }
-        return false;
+  public static boolean judgeSquareSum(int c) {
+    Set<Integer> set = new HashSet<>();
+    for (int i = 0; i * i <= c; i++) {
+      int temp = i * i;
+      if (set.contains(c - temp)) {
+        return true;
+      } else if (temp + temp == c) {
+        return true;
+      }
+      set.add(temp);
     }
+    return false;
+  }
 
 
-    public static void main(String[] args) {
-        System.out.println(judgeSquareSum(4));
-        System.out.println(judgeSquareSum(2));
-        System.out.println(judgeSquareSum(5));
-        System.out.println(judgeSquareSum(2147482647));
-    }
+  public static void main(String[] args) {
+    System.out.println(judgeSquareSum(4));
+    System.out.println(judgeSquareSum(2));
+    System.out.println(judgeSquareSum(5));
+    System.out.println(judgeSquareSum(2147482647));
+  }
 
 
 }

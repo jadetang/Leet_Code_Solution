@@ -8,23 +8,23 @@ package solution;
  */
 public class _169_Majority_Element {
 
-    public int majorityElement(int[] nums) {
-        int c = -1;
-        int k = 0;
-        for (int i = 0; i < nums.length; i++) {
-            if (k == 0) {
-                c = i;
-                k = 1;
-            } else {
-                if (nums[c] == nums[i]) {
-                    k++;
-                } else {
-                    k--;
-                }
-            }
+  public int majorityElement(int[] nums) {
+    int c = -1;
+    int k = 0;
+    for (int i = 0; i < nums.length; i++) {
+      if (k == 0) {
+        c = i;
+        k = 1;
+      } else {
+        if (nums[c] == nums[i]) {
+          k++;
+        } else {
+          k--;
         }
-        return nums[c];
-
+      }
     }
+    return nums[c];
+
+  }
 
 }

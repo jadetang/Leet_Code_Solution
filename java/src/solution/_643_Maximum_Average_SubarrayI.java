@@ -8,39 +8,38 @@ import org.junit.Assert;
 public class _643_Maximum_Average_SubarrayI {
 
 
-    public static double findMaxAverage(int[] nums, int k) {
+  public static double findMaxAverage(int[] nums, int k) {
 
-        int sum = 0;
+    int sum = 0;
 
-        for (int i = 0  ;  i < k ; i++){
-            sum += nums[i];
-        }
+    for (int i = 0; i < k; i++) {
+      sum += nums[i];
+    }
 
-        double avg = sum/(double)k;
+    double avg = sum / (double) k;
 
-        for ( int i = k ; i < nums.length ; i++){
+    for (int i = k; i < nums.length; i++) {
 
-            sum +=nums[i];
+      sum += nums[i];
 
-            sum -= nums[i-k];
+      sum -= nums[i - k];
 
+      avg = Math.max(avg, sum / (double) k);
 
-            avg = Math.max(avg,sum/(double)k);
-
-
-        }
-
-        return avg;
 
     }
 
-    public static void main(String[] args) {
-        int[] arrary = new int[] {1,12,-5,-6,50,3};
-        double ans = findMaxAverage(arrary,4);
+    return avg;
 
-        Assert.assertEquals(12.75,ans,0.00);
+  }
 
-    }
+  public static void main(String[] args) {
+    int[] arrary = new int[]{1, 12, -5, -6, 50, 3};
+    double ans = findMaxAverage(arrary, 4);
+
+    Assert.assertEquals(12.75, ans, 0.00);
+
+  }
 
 
 }

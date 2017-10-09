@@ -5,11 +5,11 @@ package solution;
  */
 public class _648_Maximum_Length_of_Pair_Chain {
 
-    public int findLongestChain(int[][] pairs) {
-        if (pairs == null || pairs.length == 0 ){
-            return 0;
-        }else {
-            return 0;
-        }
+  public int findLongestChain(int[][] pairs) {
+    if (pairs == null || pairs.length == 0) {
+      return 0;
+    } else {
+      return 0;
     }
+  }
 }

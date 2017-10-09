@@ -7,16 +7,16 @@ import java.util.BitSet;
  */
 public class _217_Contains_Duplicate {
 
-    public boolean containsDuplicate(int[] nums) {
+  public boolean containsDuplicate(int[] nums) {
 
-        BitSet b = new BitSet();
-        for (int num : nums) {
-            if (b.get(num)) {
-                return true;
-            } else {
-                b.set(num);
-            }
-        }
-        return false;
+    BitSet b = new BitSet();
+    for (int num : nums) {
+      if (b.get(num)) {
+        return true;
+      } else {
+        b.set(num);
+      }
     }
+    return false;
+  }
 }

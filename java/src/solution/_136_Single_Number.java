@@ -5,11 +5,11 @@ package solution;
  */
 public class _136_Single_Number {
 
-    public int singleNumber(int[] nums) {
-        int res = nums[0];
-        for (int i = 1; i < nums.length; i++) {
-            res ^= nums[i];
-        }
-        return res;
+  public int singleNumber(int[] nums) {
+    int res = nums[0];
+    for (int i = 1; i < nums.length; i++) {
+      res ^= nums[i];
     }
+    return res;
+  }
 }

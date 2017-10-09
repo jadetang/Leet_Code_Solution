@@ -6,8 +6,8 @@ package company.facebook;
 public class RotateMatrix {
 
 
-    public static void rotate(int[][] matrix){
+  public static void rotate(int[][] matrix) {
 
-    }
+  }
 
 }

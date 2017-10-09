@@ -10,22 +10,22 @@ import ds.ListNode;
  */
 public class _142_Linked_List_Cycle_II {
 
-    public ListNode detectCycle(ListNode head) {
-        ListNode slow = head;
-        ListNode fast = head;
-        while (fast.next != null && fast.next.next != null) {
-            slow = slow.next;
-            fast = fast.next.next;
-            if (fast == slow) {
-                while (head != slow) {
-                    head = head.next;
-                    slow = slow.next;
-                }
-                return head;
-            }
-
+  public ListNode detectCycle(ListNode head) {
+    ListNode slow = head;
+    ListNode fast = head;
+    while (fast.next != null && fast.next.next != null) {
+      slow = slow.next;
+      fast = fast.next.next;
+      if (fast == slow) {
+        while (head != slow) {
+          head = head.next;
+          slow = slow.next;
         }
-        return null;
+        return head;
+      }
+
     }
+    return null;
+  }
 
 }

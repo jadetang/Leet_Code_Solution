@@ -8,42 +8,40 @@ import java.util.ArrayDeque;
 public class _232_Implement_Queue_using_Stacks {
 
 
-
-    public class  MyQueue{
-
-
-        ArrayDeque<Integer> input = new ArrayDeque<>();
+  public class MyQueue {
 
 
-        ArrayDeque<Integer> output = new ArrayDeque<>();
+    ArrayDeque<Integer> input = new ArrayDeque<>();
 
 
-        public void  enqueue(Integer e){
-            input.push(e);
+    ArrayDeque<Integer> output = new ArrayDeque<>();
+
+
+    public void enqueue(Integer e) {
+      input.push(e);
+    }
+
+    public Integer dequeue() {
+      if (output.isEmpty()) {
+        while (!input.isEmpty()) {
+          output.push(input.pop());
         }
 
-        public Integer dequeue(){
-            if (output.isEmpty()){
-                while (!input.isEmpty()){
-                    output.push(input.pop());
-                }
+      }
+      return output.pop();
+    }
 
-            }
-            return output.pop();
+    public Integer peek() {
+      if (output.isEmpty()) {
+        while (!input.isEmpty()) {
+          output.push(input.pop());
         }
-
-        public Integer peek(){
-            if (output.isEmpty()){
-                while (!input.isEmpty()){
-                    output.push(input.pop());
-                }
-            }
-            return output.peek();
-
-        }
-
-
+      }
+      return output.peek();
 
     }
+
+
+  }
 
 }

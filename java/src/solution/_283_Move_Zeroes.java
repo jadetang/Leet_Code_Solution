@@ -6,7 +6,7 @@ package solution;
 public class _283_Move_Zeroes {
 
 
-    public void moveZeroes(int[] nums) {
+  public void moveZeroes(int[] nums) {
 
-    }
+  }
 }

@@ -8,39 +8,39 @@ import java.util.ArrayDeque;
 public class Queues_A_Tale_of_Two_Stacks {
 
 
-    public  static class  MyQueue<E>{
+  public static class MyQueue<E> {
 
 
-        ArrayDeque<E> input = new ArrayDeque<>();
+    ArrayDeque<E> input = new ArrayDeque<>();
 
-        ArrayDeque<E> output = new ArrayDeque<>();
+    ArrayDeque<E> output = new ArrayDeque<>();
 
 
-        public void  enqueue(E e){
-            input.push(e);
+    public void enqueue(E e) {
+      input.push(e);
+    }
+
+    public E dequeue() {
+      if (output.isEmpty()) {
+        while (!input.isEmpty()) {
+          output.push(input.pop());
         }
 
-        public E dequeue(){
-            if (output.isEmpty()){
-                while (!input.isEmpty()){
-                    output.push(input.pop());
-                }
+      }
+      return output.pop();
+    }
 
-            }
-            return output.pop();
+    public E peek() {
+      if (output.isEmpty()) {
+        while (!input.isEmpty()) {
+          output.push(input.pop());
         }
-
-        public E peek(){
-            if (output.isEmpty()){
-                while (!input.isEmpty()){
-                    output.push(input.pop());
-                }
-            }
-            return output.peek();
-
-        }
-
+      }
+      return output.peek();
 
     }
+
+
+  }
 
 }

@@ -10,22 +10,21 @@ import java.util.List;
 public class Sorting {
 
 
+  public static class User {
 
-    public static class User{
-        private String name;
-    }
+    private String name;
+  }
 
-    public static void main(String[] args) {
-        List<User> users  = new LinkedList<>();
-        users.add(new User());
-        users.add(new User());
-        users.add(new User());
+  public static void main(String[] args) {
+    List<User> users = new LinkedList<>();
+    users.add(new User());
+    users.add(new User());
+    users.add(new User());
 
-        Arrays.sort(users.toArray(new User[]{}));
+    Arrays.sort(users.toArray(new User[]{}));
 
 
-    }
-
+  }
 
 
 }

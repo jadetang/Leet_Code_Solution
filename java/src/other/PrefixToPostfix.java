@@ -8,24 +8,24 @@ import java.util.Scanner;
 public class PrefixToPostfix {
 
 
-    public String prefixToPostfix(String prefix){
-        if (prefix.length() <= 1){
-            return prefix;
-        }else {
-            if (!Character.isDigit(prefix.charAt(0))){
-                return prefixToPostfix(prefix.substring(1))+prefix.charAt(0);
-            }else {
-                return prefix.charAt(0) + prefixToPostfix(prefix.substring(1));
-            }
-        }
+  public String prefixToPostfix(String prefix) {
+    if (prefix.length() <= 1) {
+      return prefix;
+    } else {
+      if (!Character.isDigit(prefix.charAt(0))) {
+        return prefixToPostfix(prefix.substring(1)) + prefix.charAt(0);
+      } else {
+        return prefix.charAt(0) + prefixToPostfix(prefix.substring(1));
+      }
     }
+  }
 
-    public static void main(String[] args) {
-        Scanner s  = new Scanner(System.in);
-        StringBuilder sb = new StringBuilder();
+  public static void main(String[] args) {
+    Scanner s = new Scanner(System.in);
+    StringBuilder sb = new StringBuilder();
 
-        PrefixToPostfix p = new PrefixToPostfix();
-       // System.out.println(p.prefixToPostfix("*34"));
-        System.out.println(p.prefixToPostfix("+1*34"));
-    }
+    PrefixToPostfix p = new PrefixToPostfix();
+    // System.out.println(p.prefixToPostfix("*34"));
+    System.out.println(p.prefixToPostfix("+1*34"));
+  }
 }

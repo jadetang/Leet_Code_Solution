@@ -12,35 +12,35 @@ import java.util.Set;
 public class LargetSubsetAreFibonacci {
 
 
-    public List<Integer> fibonacciSubset(int[] array){
+  public List<Integer> fibonacciSubset(int[] array) {
 
-        Arrays.sort(array);
+    Arrays.sort(array);
 
-        int max = array[array.length -1 ];
+    int max = array[array.length - 1];
 
-        Set<Integer> set = new HashSet<>();
+    Set<Integer> set = new HashSet<>();
 
-        int a = 0;
+    int a = 0;
 
-        int b = 1;
+    int b = 1;
 
-        set.add(a);
+    set.add(a);
 
-       // set.add(b);
+    // set.add(b);
 
-        while ( b <= max){
-            set.add(b);
-            int temp = a+b;
-            a = b;
-            b = temp;
-        }
-        List<Integer> list = new LinkedList<>();
-        for (int i : array){
-            if (set.contains(i)){
-                list.add(i);
-            }
-        }
-        return list;
-
+    while (b <= max) {
+      set.add(b);
+      int temp = a + b;
+      a = b;
+      b = temp;
     }
+    List<Integer> list = new LinkedList<>();
+    for (int i : array) {
+      if (set.contains(i)) {
+        list.add(i);
+      }
+    }
+    return list;
+
+  }
 }

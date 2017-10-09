@@ -5,8 +5,8 @@ package solution;
  */
 public class _324_Wiggle_Sort_II {
 
-    public void wiggleSort(int[] nums) {
+  public void wiggleSort(int[] nums) {
 
-    }
+  }
 
 }
