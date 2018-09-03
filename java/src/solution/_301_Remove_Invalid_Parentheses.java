@@ -6,7 +6,7 @@ import java.util.Stack;
 
 */
 /**
- * @author sanguan.tangsicheng on 2017/5/21 下午5:44
+ * @author jade on 2017/5/21 下午5:44
  *//*
 
 public class _301_Remove_Invalid_Parentheses {

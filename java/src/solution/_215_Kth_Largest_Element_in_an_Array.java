@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/23 上午8:26
+ * @author jade on 2016/11/23 上午8:26
  */
 public class _215_Kth_Largest_Element_in_an_Array {
 

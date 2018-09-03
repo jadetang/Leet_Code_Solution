@@ -3,7 +3,7 @@ package solution;
 /**
  * newton 平方根
  *
- * @author sanguan.tangsicheng on 2017/7/1 下午9:13
+ * @author jade on 2017/7/1 下午9:13
  */
 public class _69_Sqrt {
 

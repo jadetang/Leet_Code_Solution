@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/10 下午1:28
+ * @author jade on 2017/7/10 下午1:28
  */
 public class SmartSubString {
 

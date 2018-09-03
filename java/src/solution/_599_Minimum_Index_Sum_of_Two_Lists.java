@@ -22,7 +22,7 @@ import java.util.Map;
  * the range of [1, 30]. The index is starting from 0 to the list length minus 1. No duplicates in
  * both lists.
  *
- * @author sanguan.tangsicheng on 2017/6/4 上午10:54
+ * @author jade on 2017/6/4 上午10:54
  */
 public class _599_Minimum_Index_Sum_of_Two_Lists {
 

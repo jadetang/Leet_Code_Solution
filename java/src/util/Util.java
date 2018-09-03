@@ -1,10 +1,11 @@
 package util;
 
+import ds.TreeNode;
 import java.util.Random;
 import java.util.function.Supplier;
 
 /**
- * @author sanguan.tangsicheng on 2017/5/3 下午10:31
+ * @author jade on 2017/5/3 下午10:31
  */
 public class Util {
 
@@ -64,4 +65,10 @@ public class Util {
     nums[j] = temp;
   }
 
+  public static void print(TreeNode treeNode) {
+    while (treeNode != null){
+      System.out.print(treeNode.val+" ");
+      treeNode = treeNode.right;
+    }
+  }
 }

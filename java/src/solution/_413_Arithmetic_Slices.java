@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/13 下午2:42
+ * @author jade on 2016/11/13 下午2:42
  */
 public class _413_Arithmetic_Slices {
 

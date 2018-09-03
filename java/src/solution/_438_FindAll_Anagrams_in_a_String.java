@@ -3,7 +3,7 @@ package solution;
 import java.util.*;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/12 上午10:49
+ * @author jade on 2016/11/12 上午10:49
  */
 public class _438_FindAll_Anagrams_in_a_String {
 

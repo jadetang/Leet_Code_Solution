@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2016/12/8 上午8:14
+ * @author jade on 2016/12/8 上午8:14
  */
 public class _434_Number_of_Segments_in_a_String {
 

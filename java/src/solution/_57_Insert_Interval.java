@@ -7,7 +7,7 @@ import java.util.TreeSet;
 import ds.Interval;
 
 /**
- * @author sanguan.tangsicheng on 2017/5/4 下午3:06
+ * @author jade on 2017/5/4 下午3:06
  */
 public class _57_Insert_Interval {
 

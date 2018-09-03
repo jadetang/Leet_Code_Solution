@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/2 下午7:16
+ * @author jade on 2017/7/2 下午7:16
  */
 public class _150_Evaluate_Reverse_Polish_Notation {
 

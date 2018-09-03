@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/2 下午9:24
+ * @author jade on 2017/7/2 下午9:24
  */
 public class _151_Max_Prodcut_SubArray {
 

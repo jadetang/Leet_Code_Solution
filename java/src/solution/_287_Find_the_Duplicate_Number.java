@@ -3,7 +3,7 @@ package solution;
 import java.util.BitSet;
 
 /**
- * @author sanguan.tangsicheng on 2016/12/15 上午9:15
+ * @author jade on 2016/12/15 上午9:15
  */
 public class _287_Find_the_Duplicate_Number {
 

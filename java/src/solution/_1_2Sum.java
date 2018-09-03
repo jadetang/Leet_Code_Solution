@@ -2,11 +2,12 @@ package solution;
 
 import java.util.HashMap;
 import java.util.Map;
+import level.Easy;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/1 上午8:38
+ * @author jade on 2017/7/1 上午8:38
  */
-public class _1_2Sum {
+public class _1_2Sum implements Easy {
 
 
   public static int[] twoSum(int[] nums, int target) {

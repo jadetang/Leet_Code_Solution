@@ -1,7 +1,7 @@
 package ds;
 
 /**
- * @author sanguan.tangsicheng on 16/7/16 上午11:49
+ * @author jade on 16/7/16 上午11:49
  */
 public class DirectedDFS {
 

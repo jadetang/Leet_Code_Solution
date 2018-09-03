@@ -10,7 +10,7 @@ import tag.Array;
  * Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue
  * respectively.
  *
- * @author sanguan.tangsicheng on 2017/5/4 下午10:07
+ * @author jade on 2017/5/4 下午10:07
  */
 public class _75_Sort_Colors implements Array, Medium {
 

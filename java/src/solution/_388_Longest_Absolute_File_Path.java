@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/29 上午12:45
+ * @author jade on 2016/11/29 上午12:45
  */
 public class _388_Longest_Absolute_File_Path {
 

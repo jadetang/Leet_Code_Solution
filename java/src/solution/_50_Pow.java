@@ -6,7 +6,7 @@ package solution;
  * tbl[i-1]*tbl[i-1]; } for(int i=0;i<32;i++){ if( m & (0x1<<i) ) result *= tbl[i]; } return result;
  * } };
  *
- * @author sanguan.tangsicheng on 2017/7/1 下午8:03
+ * @author jade on 2017/7/1 下午8:03
  */
 public class _50_Pow {
 

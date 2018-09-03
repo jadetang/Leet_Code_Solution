@@ -10,7 +10,7 @@ package company.facebook;
  * Input : arr[] = {1, 1, 1, 1, 1, 1} k = 2 Output : 6 The sub array is {1, 1, 1, 1, 1, 1} Asked in
  * : Facebook
  *
- * @author sanguan.tangsicheng on 2017/6/23 上午8:37
+ * @author jade on 2017/6/23 上午8:37
  */
 public class Largest_sum_subarray_with_at_least_k_numbers {
 

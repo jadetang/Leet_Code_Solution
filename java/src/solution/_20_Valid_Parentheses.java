@@ -2,11 +2,12 @@ package solution;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+import level.Easy;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/1 下午12:16
+ * @author jade on 2017/7/1 下午12:16
  */
-public class _20_Valid_Parentheses {
+public class _20_Valid_Parentheses implements Easy {
 
   public boolean isValid(String s) {
     Deque<Character> stack = new ArrayDeque<>();

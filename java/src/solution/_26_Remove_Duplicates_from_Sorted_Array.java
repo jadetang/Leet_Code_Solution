@@ -1,9 +1,11 @@
 package solution;
 
+import level.Easy;
+
 /**
- * @author sanguan.tangsicheng on 16/9/12 下午3:48
+ * @author jade on 16/9/12 下午3:48
  */
-public class _26_Remove_Duplicates_from_Sorted_Array {
+public class _26_Remove_Duplicates_from_Sorted_Array implements Easy {
 
   public static int removeDuplicates(int[] nums) {
     if (nums == null || nums.length == 0) {

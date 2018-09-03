@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/3 上午8:47
+ * @author jade on 2017/7/3 上午8:47
  */
 public class _202_Happy_Number {
 

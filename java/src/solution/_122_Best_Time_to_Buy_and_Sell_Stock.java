@@ -3,7 +3,7 @@ package solution;
 /**
  * https://leetcode.com/articles/best-time-buy-and-sell-stock-ii/
  *
- * @author sanguan.tangsicheng on 2017/7/2 下午2:50
+ * @author jade on 2017/7/2 下午2:50
  */
 public class _122_Best_Time_to_Buy_and_Sell_Stock {
 

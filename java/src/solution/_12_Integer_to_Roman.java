@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/1 下午3:44
+ * @author jade on 2017/7/1 下午3:44
  */
 public class _12_Integer_to_Roman {
 

@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author sanguan.tangsicheng on 16/9/20 下午3:52
+ * @author jade on 16/9/20 下午3:52
  */
 public class _410_BinaryWatch {
 

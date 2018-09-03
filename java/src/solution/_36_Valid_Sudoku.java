@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/12 下午5:39
+ * @author jade on 2016/11/12 下午5:39
  */
 public class _36_Valid_Sudoku {
 

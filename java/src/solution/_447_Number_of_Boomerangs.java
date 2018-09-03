@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/13 上午10:01
+ * @author jade on 2016/11/13 上午10:01
  */
 public class _447_Number_of_Boomerangs {
 

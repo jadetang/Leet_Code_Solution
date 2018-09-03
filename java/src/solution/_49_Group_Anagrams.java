@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/1 下午7:50
+ * @author jade on 2017/7/1 下午7:50
  */
 public class _49_Group_Anagrams {
 

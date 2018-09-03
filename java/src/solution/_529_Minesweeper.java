@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author sanguan.tangsicheng on 2017/6/5 上午10:40
+ * @author jade on 2017/6/5 上午10:40
  */
 public class _529_Minesweeper {
 

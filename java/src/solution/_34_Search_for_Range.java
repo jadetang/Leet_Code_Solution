@@ -3,7 +3,7 @@ package solution;
 import java.util.Arrays;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/1 下午5:11
+ * @author jade on 2017/7/1 下午5:11
  */
 public class _34_Search_for_Range {
 

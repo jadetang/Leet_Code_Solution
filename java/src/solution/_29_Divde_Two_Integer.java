@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/1 下午3:52
+ * @author jade on 2017/7/1 下午3:52
  */
 public class _29_Divde_Two_Integer {
 

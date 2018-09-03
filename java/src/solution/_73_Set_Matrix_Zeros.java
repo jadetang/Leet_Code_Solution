@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/1 下午9:21
+ * @author jade on 2017/7/1 下午9:21
  */
 public class _73_Set_Matrix_Zeros {
 

@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.stream.IntStream;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/30 下午2:45
+ * @author jade on 2017/7/30 下午2:45
  */
 public class _473_Matchsticks_to_Square {
 

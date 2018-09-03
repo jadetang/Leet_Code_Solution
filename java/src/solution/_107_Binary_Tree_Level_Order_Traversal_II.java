@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Queue;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/12 下午9:14
+ * @author jade on 2016/11/12 下午9:14
  */
 public class _107_Binary_Tree_Level_Order_Traversal_II {
 

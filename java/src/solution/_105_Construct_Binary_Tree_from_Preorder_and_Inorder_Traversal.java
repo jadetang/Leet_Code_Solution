@@ -13,7 +13,7 @@ import ds.TreeNode;
  * A /   \ /       \ B         C / \        / /     \    / D       E  F
  * http://www.geeksforgeeks.org/construct-tree-from-given-inorder-and-preorder-traversal/
  *
- * @author sanguan.tangsicheng on 2017/6/3 上午9:06
+ * @author jade on 2017/6/3 上午9:06
  */
 public class _105_Construct_Binary_Tree_from_Preorder_and_Inorder_Traversal {
 

@@ -6,7 +6,7 @@ package solution;
  * amount of money cannot be made up by any combination of the coins, return -1. Example 1: coins =
  * [1, 2, 5], amount = 11 return 3 (11 = 5 + 5 + 1) Example 2: coins = [2], amount = 3 return -1.
  *
- * @author sanguan.tangsicheng on 2017/5/10 上午10:55
+ * @author jade on 2017/5/10 上午10:55
  */
 public class _322_Coin_Change {
 

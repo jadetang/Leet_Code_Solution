@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/3 下午1:28
+ * @author jade on 2017/7/3 下午1:28
  */
 public class _204_Count_Primes {
 

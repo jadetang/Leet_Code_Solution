@@ -3,7 +3,7 @@ package solution;
 import util.Assert;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/9 上午10:14
+ * @author jade on 2017/7/9 上午10:14
  */
 public class _640_Solve_the_Equation {
 

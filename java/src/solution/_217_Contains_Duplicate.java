@@ -3,7 +3,7 @@ package solution;
 import java.util.BitSet;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/4 上午8:23
+ * @author jade on 2017/7/4 上午8:23
  */
 public class _217_Contains_Duplicate {
 

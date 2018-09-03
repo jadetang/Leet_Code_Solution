@@ -3,7 +3,7 @@ package solution;
 import ds.ListNode;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/2 下午10:04
+ * @author jade on 2017/7/2 下午10:04
  */
 public class _160_Intersection_of_Two_Linked_Lists {
 

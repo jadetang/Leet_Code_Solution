@@ -3,7 +3,7 @@ package solution;
 import util.Assert;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/30 下午6:02
+ * @author jade on 2017/7/30 下午6:02
  */
 public class _540_Single_Element_in_a_Sorted_Array {
 

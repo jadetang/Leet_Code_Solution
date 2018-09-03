@@ -3,7 +3,7 @@ package solution;
 import ds.TreeNode;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/13 上午10:38
+ * @author jade on 2016/11/13 上午10:38
  */
 public class _235_Lowest_Common_Ancestor_of_a_Binary_Search_Tree {
 

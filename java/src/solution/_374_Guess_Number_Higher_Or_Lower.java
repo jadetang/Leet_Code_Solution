@@ -3,7 +3,7 @@ package solution;
 import java.util.Random;
 
 /**
- * @author sanguan.tangsicheng on 16/7/13 下午4:00
+ * @author jade on 16/7/13 下午4:00
  */
 public class _374_Guess_Number_Higher_Or_Lower {
 

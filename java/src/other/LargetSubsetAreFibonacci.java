@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * @author sanguan.tangsicheng on 2017/6/15 下午6:59
+ * @author jade on 2017/6/15 下午6:59
  */
 public class LargetSubsetAreFibonacci {
 

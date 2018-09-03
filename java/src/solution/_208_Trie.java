@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/4 上午7:49
+ * @author jade on 2017/7/4 上午7:49
  */
 public class _208_Trie {
 

@@ -1,7 +1,7 @@
 package ds;
 
 /**
- * @author sanguan.tangsicheng on 16/7/16 下午8:06
+ * @author jade on 16/7/16 下午8:06
  */
 public class ListNode {
 

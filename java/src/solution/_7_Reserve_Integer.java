@@ -3,7 +3,7 @@ package solution;
 /**
  * 翻转整数，要考虑 溢出 和  以 0 结尾的情况
  *
- * @author sanguan.tangsicheng on 2017/7/1 上午9:50
+ * @author jade on 2017/7/1 上午9:50
  */
 public class _7_Reserve_Integer {
 
@@ -35,9 +35,23 @@ public class _7_Reserve_Integer {
 
   }
 
+  public static int reverse2 (int x ){
+    int rec = 0;
+    while( x != 0 ){
+      int pop = x % 10;
+      rec = rec*10 + pop;
+      if (rec*10 / 10 != rec ) {
+        return 0;
+      }else{
+        x = x / 10;
+      }
+
+    }
+    return rec;
+  }
+
   public static void main(String[] args) {
-    System.out.println(reverse(120));
-    System.out.println(reverse(-120));
+    System.out.println(reverse(-2147483648));
   }
 
 }

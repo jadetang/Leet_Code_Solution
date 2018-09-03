@@ -5,7 +5,7 @@ import java.util.Arrays;
 import ds.TreeNode;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/2 下午12:19
+ * @author jade on 2017/7/2 下午12:19
  */
 public class _108_Convert_Sorted_Array_to_Binary_Search_Tree {
 

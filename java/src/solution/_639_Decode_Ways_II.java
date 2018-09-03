@@ -9,7 +9,7 @@ package solution;
  * "*" Output: 9 Explanation: The encoded message can be decoded to the string: "A", "B", "C", "D",
  * "E", "F", "G", "H", "I". Example 2: Input: "1*" Output: 9 + 9 = 18
  *
- * @author sanguan.tangsicheng on 2017/7/9 上午10:42
+ * @author jade on 2017/7/9 上午10:42
  */
 public class _639_Decode_Ways_II {
 

@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/17 上午7:55
+ * @author jade on 2016/11/17 上午7:55
  */
 public class _423_Reconstruct_Original_Digits_from_English {
 

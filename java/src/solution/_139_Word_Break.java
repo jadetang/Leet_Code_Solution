@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/2 下午5:02
+ * @author jade on 2017/7/2 下午5:02
  */
 public class _139_Word_Break {
 

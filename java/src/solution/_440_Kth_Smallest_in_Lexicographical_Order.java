@@ -5,7 +5,7 @@ import level.Hard;
 import java.util.PriorityQueue;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/24 下午10:34
+ * @author jade on 2016/11/24 下午10:34
  */
 public class _440_Kth_Smallest_in_Lexicographical_Order implements Hard {
 

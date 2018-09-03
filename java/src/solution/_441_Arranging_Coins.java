@@ -3,7 +3,7 @@ package solution;
 import level.Easy;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/24 下午10:05
+ * @author jade on 2016/11/24 下午10:05
  */
 public class _441_Arranging_Coins implements Easy {
 

@@ -1,9 +1,11 @@
 package solution;
 
+import level.Easy;
+
 /**
- * @author sanguan.tangsicheng on 2017/7/1 下午3:47
+ * @author jade on 2017/7/1 下午3:47
  */
-public class _28_strStr {
+public class _28_strStr implements Easy {
 
   public int strStr(String haystack, String needle) {
     for (int i = 0; ; i++) {

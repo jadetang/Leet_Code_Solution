@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/6 上午9:05
+ * @author jade on 2017/7/6 上午9:05
  */
 public class _242_Valid_Anagram {
 

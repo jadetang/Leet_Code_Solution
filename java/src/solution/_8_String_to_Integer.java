@@ -3,7 +3,7 @@ package solution;
 /**
  * 溢出怎么办，符号怎么办，输入是否合法
  *
- * @author sanguan.tangsicheng on 2017/7/1 上午9:59
+ * @author jade on 2017/7/1 上午9:59
  */
 public class _8_String_to_Integer {
 

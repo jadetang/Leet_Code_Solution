@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/13 下午5:00
+ * @author jade on 2016/11/13 下午5:00
  */
 public class _384_Shuffle_An_Array {
 

@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/17 下午8:51
+ * @author jade on 2016/11/17 下午8:51
  */
 public class _216_Combination_Sum_III {
 

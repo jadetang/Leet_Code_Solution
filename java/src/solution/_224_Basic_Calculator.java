@@ -3,7 +3,7 @@ package solution;
 import java.util.Stack;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/4 上午8:45
+ * @author jade on 2017/7/4 上午8:45
  */
 public class _224_Basic_Calculator {
 

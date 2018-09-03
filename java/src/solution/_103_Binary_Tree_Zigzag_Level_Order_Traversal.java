@@ -11,7 +11,7 @@ import java.util.Stack;
 import ds.TreeNode;
 
 /**
- * @author sanguan.tangsicheng on 2016/12/17 上午10:57
+ * @author jade on 2016/12/17 上午10:57
  */
 public class _103_Binary_Tree_Zigzag_Level_Order_Traversal {
 

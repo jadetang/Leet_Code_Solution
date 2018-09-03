@@ -3,7 +3,7 @@ package solution;
 import level.Medium;
 
 /**
- * @author sanguan.tangsicheng on 2016/12/3 上午9:25
+ * @author jade on 2016/12/3 上午9:25
  */
 public class _365_Water_and_Jug_Problem implements Medium {
 

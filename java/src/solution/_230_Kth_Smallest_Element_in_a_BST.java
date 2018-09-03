@@ -3,7 +3,7 @@ package solution;
 import ds.TreeNode;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/16 下午9:22
+ * @author jade on 2016/11/16 下午9:22
  */
 public class _230_Kth_Smallest_Element_in_a_BST {
 

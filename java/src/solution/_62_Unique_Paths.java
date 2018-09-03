@@ -3,7 +3,7 @@ package solution;
 import java.util.Arrays;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/1 下午9:01
+ * @author jade on 2017/7/1 下午9:01
  */
 public class _62_Unique_Paths {
 

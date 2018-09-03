@@ -3,7 +3,7 @@ package solution;
 import java.util.Arrays;
 
 /**
- * @author sanguan.tangsicheng on 16/9/30 上午9:39
+ * @author jade on 16/9/30 上午9:39
  */
 public class _300_Longest_Increasing_Subsequence {
 

@@ -25,7 +25,7 @@ import java.util.Map;
  * to buy at most 6 of them. You are not allowed to buy more items than you want, even if that would
  * lower the overall price.
  *
- * @author sanguan.tangsicheng on 2017/7/9 上午10:43
+ * @author jade on 2017/7/9 上午10:43
  */
 public class _638_Shopping_Offers {
 

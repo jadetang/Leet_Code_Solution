@@ -3,7 +3,7 @@ package solution;
 import java.util.*;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/13 下午4:41
+ * @author jade on 2016/11/13 下午4:41
  */
 public class _347_Top_K_Frequent_Elements {
 

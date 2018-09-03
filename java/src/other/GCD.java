@@ -1,7 +1,7 @@
 package other;
 
 /**
- * @author sanguan.tangsicheng on 2016/12/3 上午11:47
+ * @author jade on 2016/12/3 上午11:47
  */
 public class GCD {
 

@@ -5,13 +5,13 @@ import java.util.Arrays;
 public class Main {
 
   public static void main(String[] args) {
-    int[] r = new int[]{1, 2, 3, 10, 18};
-    System.out.println(Arrays.binarySearch(r, 20));
-    System.out.println(Arrays.binarySearch(r, -1));
-    System.out.println(Arrays.binarySearch(r, 1));
-    System.out.println(Arrays.binarySearch(r, 6));
-    System.out.println(Arrays.binarySearch(r, 5));
-    System.out.println(Arrays.binarySearch(r, 7));
-    System.out.println(Arrays.binarySearch(r, 3));
+
+    int Y = 85;
+    int X = 10;
+    int D = 30;
+    double x = ( Y - X ) / (double)D;
+    System.out.println(x);
+    Double j = Math.ceil( x );
+    System.out.println(j);
   }
 }

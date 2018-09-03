@@ -12,7 +12,7 @@ import java.util.Queue;
  *
  * X X X X X X X X X X X X X O X X Seen
  *
- * @author sanguan.tangsicheng on 2017/7/2 下午3:45
+ * @author jade on 2017/7/2 下午3:45
  */
 public class _130_Surrounded_Regions {
 

@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/9 下午3:04
+ * @author jade on 2017/7/9 下午3:04
  */
 public class _567_Permutation_in_String {
 

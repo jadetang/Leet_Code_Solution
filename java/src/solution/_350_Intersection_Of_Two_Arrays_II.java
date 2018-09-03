@@ -3,7 +3,7 @@ package solution;
 import java.util.*;
 
 /**
- * @author sanguan.tangsicheng on 16/7/12 下午3:24
+ * @author jade on 16/7/12 下午3:24
  */
 public class _350_Intersection_Of_Two_Arrays_II {
 

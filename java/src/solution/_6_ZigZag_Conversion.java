@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Stack;
 
 /**
- * @author sanguan.tangsicheng on 16/7/16 上午9:23
+ * @author jade on 16/7/16 上午9:23
  */
 public class _6_ZigZag_Conversion {
 

@@ -3,7 +3,7 @@ package solution;
 import org.junit.Assert;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/16 上午9:38
+ * @author jade on 2017/7/16 上午9:38
  */
 public class _643_Maximum_Average_SubarrayI {
 

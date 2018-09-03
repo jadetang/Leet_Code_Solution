@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/7 下午8:26
+ * @author jade on 2017/7/7 下午8:26
  */
 public class _326_Power_of_Three {
 

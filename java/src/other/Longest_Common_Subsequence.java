@@ -3,7 +3,7 @@ package other;
 /**
  * http://www.geeksforgeeks.org/?p=12998
  *
- * @author sanguan.tangsicheng on 2017/6/28 下午7:57
+ * @author jade on 2017/6/28 下午7:57
  */
 public class Longest_Common_Subsequence {
 

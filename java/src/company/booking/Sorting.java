@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/8 下午7:16
+ * @author jade on 2017/7/8 下午7:16
  */
 public class Sorting {
 

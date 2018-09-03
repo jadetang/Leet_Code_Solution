@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/27 下午11:55
+ * @author jade on 2016/11/27 下午11:55
  */
 public class Prime {
 

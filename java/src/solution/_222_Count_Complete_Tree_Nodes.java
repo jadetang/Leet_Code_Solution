@@ -3,7 +3,7 @@ package solution;
 import ds.TreeNode;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/29 上午10:24
+ * @author jade on 2017/7/29 上午10:24
  */
 public class _222_Count_Complete_Tree_Nodes {
 

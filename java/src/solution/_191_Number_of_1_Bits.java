@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/3 上午7:55
+ * @author jade on 2017/7/3 上午7:55
  */
 public class _191_Number_of_1_Bits {
 

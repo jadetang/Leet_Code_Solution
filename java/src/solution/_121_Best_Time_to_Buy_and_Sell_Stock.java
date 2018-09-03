@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/5/19 上午11:47
+ * @author jade on 2017/5/19 上午11:47
  */
 public class _121_Best_Time_to_Buy_and_Sell_Stock {
 

@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Queue;
 
 /**
- * @author sanguan.tangsicheng on 2017/6/7 下午11:32
+ * @author jade on 2017/6/7 下午11:32
  */
 public class _582_Kill_Process {
 

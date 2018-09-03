@@ -1,5 +1,6 @@
 package solution;
 
+import company.Amazon;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -27,9 +28,9 @@ import level.Medium;
  *
  * You may assume beginWord and endWord are non-empty and are not the same.
  *
- * @author sanguan.tangsicheng on 2017/5/5 上午7:18
+ * @author jade on 2017/5/5 上午7:18
  */
-public class _127_Word_Ladder implements Medium {
+public class _127_Word_Ladder implements Medium, Amazon {
 
   /**
    * Basically I keep two sets of words, one set reached that represents the borders that have been

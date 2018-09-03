@@ -5,7 +5,7 @@ import ds.ListNode;
 /**
  * 1. 先找到长度，然后删除 2. 先移动 N , 然后用两个指针
  *
- * @author sanguan.tangsicheng on 2017/7/1 下午12:05
+ * @author jade on 2017/7/1 下午12:05
  */
 public class _19_Remove_Nth_Node_From_End_of_List {
 

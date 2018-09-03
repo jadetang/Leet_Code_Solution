@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author sanguan.tangsicheng on 16/9/21 下午8:28
+ * @author jade on 16/9/21 下午8:28
  */
 public class _18_4Sum {
 

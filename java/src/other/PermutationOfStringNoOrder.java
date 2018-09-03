@@ -1,7 +1,7 @@
 package other;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/8 上午10:47
+ * @author jade on 2017/7/8 上午10:47
  */
 public class PermutationOfStringNoOrder {
 

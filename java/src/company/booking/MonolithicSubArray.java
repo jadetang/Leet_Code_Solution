@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/8 下午5:38
+ * @author jade on 2017/7/8 下午5:38
  */
 public class MonolithicSubArray {
 

@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 /**
- * @author sanguan.tangsicheng on 2017/6/10 下午3:53
+ * @author jade on 2017/6/10 下午3:53
  */
 public class _84_Largest_Rectangle_in_Histogram {
 

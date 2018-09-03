@@ -1,7 +1,7 @@
 package company.facebook;
 
 /**
- * @author sanguan.tangsicheng on 2017/6/27 上午7:56
+ * @author jade on 2017/6/27 上午7:56
  */
 public class RerangeString {
 

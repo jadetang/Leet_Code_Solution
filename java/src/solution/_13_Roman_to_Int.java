@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/1 上午11:33
+ * @author jade on 2017/7/1 上午11:33
  */
 public class _13_Roman_to_Int {
 

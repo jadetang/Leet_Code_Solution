@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/13 下午5:34
+ * @author jade on 2016/11/13 下午5:34
  */
 public class _357_Count_Numbers_with_Unique_Digits {
 

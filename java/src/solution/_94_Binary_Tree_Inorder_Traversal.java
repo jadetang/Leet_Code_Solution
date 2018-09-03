@@ -6,7 +6,7 @@ import java.util.List;
 import ds.TreeNode;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/2 上午10:28
+ * @author jade on 2017/7/2 上午10:28
  */
 public class _94_Binary_Tree_Inorder_Traversal {
 

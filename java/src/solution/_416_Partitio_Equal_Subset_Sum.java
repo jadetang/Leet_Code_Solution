@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * @author sanguan.tangsicheng on 2016/10/15 下午9:54
+ * @author jade on 2016/10/15 下午9:54
  */
 public class _416_Partitio_Equal_Subset_Sum {
 

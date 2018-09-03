@@ -3,7 +3,7 @@ package solution;
 import ds.TreeNode;
 
 /**
- * @author sanguan.tangsicheng on 2017/6/4 下午3:06
+ * @author jade on 2017/6/4 下午3:06
  */
 public class _572_Subtree_of_Another_Tree {
 

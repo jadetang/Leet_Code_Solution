@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/13 下午10:40
+ * @author jade on 2016/11/13 下午10:40
  */
 public class _343_Integer_Break {
 

@@ -3,7 +3,7 @@ package solution;
 import java.util.Arrays;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/17 上午7:24
+ * @author jade on 2016/11/17 上午7:24
  */
 public class _377_Combination_Sum_IV {
 

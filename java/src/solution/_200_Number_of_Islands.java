@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/3 上午8:08
+ * @author jade on 2017/7/3 上午8:08
  */
 public class _200_Number_of_Islands {
 

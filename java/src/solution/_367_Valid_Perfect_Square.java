@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2016/12/3 上午12:37
+ * @author jade on 2016/12/3 上午12:37
  */
 public class _367_Valid_Perfect_Square {
 

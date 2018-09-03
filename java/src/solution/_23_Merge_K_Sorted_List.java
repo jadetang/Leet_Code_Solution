@@ -1,11 +1,12 @@
 package solution;
 
+import java.util.Comparator;
 import java.util.PriorityQueue;
 
 import ds.ListNode;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/1 下午1:18
+ * @author jade on 2017/7/1 下午1:18
  */
 public class _23_Merge_K_Sorted_List {
 
@@ -14,7 +15,7 @@ public class _23_Merge_K_Sorted_List {
     if (lists == null || lists.length == 0) {
       return null;
     }
-    PriorityQueue<ListNode> p = new PriorityQueue<>(100, (l1, l2) -> l1.val - l2.val);
+    PriorityQueue<ListNode> p = new PriorityQueue<>(100, Comparator.comparingInt(l -> l.val));
     //O(k)
     for (int i = 0; i < lists.length; i++) {
       if (lists[i] != null) {

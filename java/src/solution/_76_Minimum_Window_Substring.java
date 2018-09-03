@@ -15,7 +15,7 @@ import java.util.Map;
  * If there are multiple such windows, you are guaranteed that there will always be only one unique
  * minimum window in S.
  *
- * @author sanguan.tangsicheng on 2017/7/1 下午9:44
+ * @author jade on 2017/7/1 下午9:44
  */
 public class _76_Minimum_Window_Substring {
 

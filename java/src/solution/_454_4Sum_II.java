@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/23 下午5:02
+ * @author jade on 2016/11/23 下午5:02
  */
 public class _454_4Sum_II implements Medium {
 

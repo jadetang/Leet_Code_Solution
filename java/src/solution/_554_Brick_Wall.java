@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 import util.Assert;
 
 /**
- * @author sanguan.tangsicheng on 2017/8/8 下午10:55
+ * @author jade on 2017/8/8 下午10:55
  */
 public class _554_Brick_Wall {
 

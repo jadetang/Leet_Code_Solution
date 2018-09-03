@@ -6,7 +6,7 @@ import java.util.Queue;
 
 */
 /**
- * @author sanguan.tangsicheng on 2017/6/22 下午1:23
+ * @author jade on 2017/6/22 下午1:23
  *//*
 
 public class MaxCocurrentUser {

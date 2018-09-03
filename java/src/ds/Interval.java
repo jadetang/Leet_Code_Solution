@@ -1,7 +1,7 @@
 package ds;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/14 上午7:29
+ * @author jade on 2016/11/14 上午7:29
  */
 public class Interval {
 

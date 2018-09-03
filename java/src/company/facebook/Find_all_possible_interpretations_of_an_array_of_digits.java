@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * http://www.geeksforgeeks.org/find-all-possible-interpretations/
  *
- * @author sanguan.tangsicheng on 2017/6/27 下午11:08
+ * @author jade on 2017/6/27 下午11:08
  */
 public class Find_all_possible_interpretations_of_an_array_of_digits {
 

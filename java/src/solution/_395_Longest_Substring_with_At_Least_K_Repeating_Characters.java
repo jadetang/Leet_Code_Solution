@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/28 下午7:51
+ * @author jade on 2016/11/28 下午7:51
  */
 public class _395_Longest_Substring_with_At_Least_K_Repeating_Characters {
 

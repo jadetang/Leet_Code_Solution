@@ -12,7 +12,7 @@ import java.util.stream.IntStream;
 import util.Util;
 
 /**
- * @author sanguan.tangsicheng on 2017/6/23 上午7:40
+ * @author jade on 2017/6/23 上午7:40
  */
 public class _47_Permutations_II {
 

@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/1 下午9:17
+ * @author jade on 2017/7/1 下午9:17
  */
 public class _70_Climbing_Stairs {
 

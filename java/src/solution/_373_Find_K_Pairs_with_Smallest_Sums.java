@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.PriorityQueue;
 
 /**
- * @author sanguan.tangsicheng on 16/7/11 下午5:04
+ * @author jade on 16/7/11 下午5:04
  */
 public class _373_Find_K_Pairs_with_Smallest_Sums {
 

@@ -15,7 +15,7 @@ import tag.Greedy;
  *
  * A = [3,2,1,0,4], return false.
  *
- * @author sanguan.tangsicheng on 2016/11/26 下午10:00
+ * @author jade on 2016/11/26 下午10:00
  */
 public class _55_Jump_Game implements Array, Greedy {
 

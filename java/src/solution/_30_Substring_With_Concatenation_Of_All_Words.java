@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * @author sanguan.tangsicheng on 16/9/22 下午8:36
+ * @author jade on 16/9/22 下午8:36
  */
 public class _30_Substring_With_Concatenation_Of_All_Words {
 

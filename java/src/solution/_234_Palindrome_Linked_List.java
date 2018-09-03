@@ -3,7 +3,7 @@ package solution;
 import ds.ListNode;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/5 下午9:35
+ * @author jade on 2017/7/5 下午9:35
  */
 public class _234_Palindrome_Linked_List {
 

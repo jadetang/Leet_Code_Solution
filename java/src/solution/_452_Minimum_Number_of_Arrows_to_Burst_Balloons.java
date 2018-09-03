@@ -3,7 +3,7 @@ package solution;
 import java.util.Arrays;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/16 上午8:42
+ * @author jade on 2016/11/16 上午8:42
  */
 public class _452_Minimum_Number_of_Arrows_to_Burst_Balloons {
 

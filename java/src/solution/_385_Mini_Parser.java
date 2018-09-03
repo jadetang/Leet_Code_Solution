@@ -8,7 +8,7 @@ import java.util.Stack;
 
 */
 /**
- * @author sanguan.tangsicheng on 2016/11/27 下午8:16
+ * @author jade on 2016/11/27 下午8:16
  *//*
 
 public class _385_Mini_Parser {

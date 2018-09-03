@@ -3,7 +3,7 @@ package solution;
 import ds.ListNode;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/5 下午10:39
+ * @author jade on 2017/7/5 下午10:39
  */
 public class _237_Delete_Node_in_a_Linked_List {
 

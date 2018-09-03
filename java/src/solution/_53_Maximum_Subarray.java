@@ -6,7 +6,7 @@ package solution;
  *
  * the paragraph below was copied from his paper (with a little modifications)
  *
- * algorithm that operates on arrays: it starts at the left end (element A[1]) and scans t hrough to
+ * algorithm that operates on arrays: it starts at the left end (element A[1]) and scans t through to
  * the right end (element A[n]), keeping track of the maximum sum subvector seen so far. The maximum
  * is initially A[0]. Suppose we've solved the problem for A[1 .. i - 1]; how can we extend that to
  * A[1 .. i]? The maximum sum in the first I elements is either the maximum sum in the first i - 1
@@ -15,7 +15,7 @@ package solution;
  *
  * MaxEndingHere is either A[i] plus the previous MaxEndingHere, or just A[i], whichever is larger
  *
- * @author sanguan.tangsicheng on 2017/7/1 下午8:19
+ * @author jade on 2017/7/1 下午8:19
  */
 public class _53_Maximum_Subarray {
 

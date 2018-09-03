@@ -3,7 +3,7 @@ package hackrank.crack_the_code_interview;
 import java.util.ArrayDeque;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/10 上午7:09
+ * @author jade on 2017/7/10 上午7:09
  */
 public class Queues_A_Tale_of_Two_Stacks {
 

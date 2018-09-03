@@ -10,7 +10,7 @@ import util.Util;
 /**
  * 思路，将值为x的数放在下标x-1的位置，即：A[i]存放的应该是i+1这个数。
  *
- * @author sanguan.tangsicheng on 2017/5/3 下午10:53
+ * @author jade on 2017/5/3 下午10:53
  */
 public class _41_First_Missing_Positive implements Array, Medium {
 

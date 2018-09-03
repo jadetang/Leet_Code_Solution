@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Queue;
 
 /**
- * @author sanguan.tangsicheng on 2017/5/8 上午11:25
+ * @author jade on 2017/5/8 上午11:25
  */
 public class _45_Jump_Game_II {
 

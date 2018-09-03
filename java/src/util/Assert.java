@@ -1,7 +1,7 @@
 package util;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/9 上午8:18
+ * @author jade on 2017/7/9 上午8:18
  */
 public class Assert {
 

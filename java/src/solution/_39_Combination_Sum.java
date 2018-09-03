@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * 组合，不考虑顺序
  *
- * @author sanguan.tangsicheng on 2016/11/19 下午11:17
+ * @author jade on 2016/11/19 下午11:17
  */
 public class _39_Combination_Sum {
 

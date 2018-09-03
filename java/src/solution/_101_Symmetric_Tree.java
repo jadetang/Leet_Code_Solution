@@ -8,7 +8,7 @@ import java.util.Queue;
 /**
  * 还有一种方式，前序遍历和后序遍历一遍，如果两个相同，表示是一样的。
  *
- * @author sanguan.tangsicheng on 2016/11/12 下午8:31
+ * @author jade on 2016/11/12 下午8:31
  */
 public class _101_Symmetric_Tree {
 

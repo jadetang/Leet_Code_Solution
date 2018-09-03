@@ -4,7 +4,7 @@ import level.Medium;
 import tag.Array;
 
 /**
- * @author sanguan.tangsicheng on 2017/5/2 下午8:11
+ * @author jade on 2017/5/2 下午8:11
  */
 public class _566_Reshape_the_Matrix implements Medium, Array {
 

@@ -7,7 +7,7 @@ import java.util.List;
 /**
  * see http://www.geeksforgeeks.org/lexicographic-permutations-of-string/
  *
- * @author sanguan.tangsicheng on 2017/5/18 上午10:51
+ * @author jade on 2017/5/18 上午10:51
  */
 public class PermutationOfString {
 

@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/2 下午4:25
+ * @author jade on 2017/7/2 下午4:25
  */
 public class _131_Palindrome_Partitioning {
 

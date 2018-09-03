@@ -3,7 +3,7 @@ package solution;
 import java.util.*;
 
 /**
- * @author sanguan.tangsicheng on 2016/12/8 下午8:19
+ * @author jade on 2016/12/8 下午8:19
  */
 public class _403_Frog_Jump {
 

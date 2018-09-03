@@ -8,7 +8,7 @@ import java.util.Set;
 import java.util.Stack;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/4 下午10:53
+ * @author jade on 2017/7/4 下午10:53
  */
 public class _71_Simplify_Path {
 

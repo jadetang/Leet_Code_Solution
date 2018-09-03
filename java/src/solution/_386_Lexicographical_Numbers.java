@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.PriorityQueue;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/30 下午9:01
+ * @author jade on 2016/11/30 下午9:01
  */
 public class _386_Lexicographical_Numbers implements Medium {
 

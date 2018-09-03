@@ -1,7 +1,7 @@
 package ds;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/12 下午8:27
+ * @author jade on 2016/11/12 下午8:27
  */
 public class TreeNode {
 
@@ -11,5 +11,10 @@ public class TreeNode {
 
   public TreeNode(int x) {
     val = x;
+  }
+
+  @Override
+  public String toString(){
+    return this.val+"";
   }
 }

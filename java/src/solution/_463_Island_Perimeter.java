@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/20 下午8:25
+ * @author jade on 2016/11/20 下午8:25
  */
 public class _463_Island_Perimeter {
 

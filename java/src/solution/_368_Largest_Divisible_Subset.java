@@ -8,7 +8,7 @@ import tag.DynamicProgramming;
 import tag.Math;
 
 /**
- * @author sanguan.tangsicheng on 2016/10/10 下午9:12
+ * @author jade on 2016/10/10 下午9:12
  */
 public class _368_Largest_Divisible_Subset implements DynamicProgramming, Math {
 

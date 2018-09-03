@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/20 下午6:06
+ * @author jade on 2016/11/20 下午6:06
  */
 public class _424_Longest_Repeating_Character_Replacement {
 

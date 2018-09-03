@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * longUrl -> hashCode -> dict mapping -> shortUrl shortUrl -> dict mapping -> hashCode -> longUrl
  *
- * @author sanguan.tangsicheng on 2017/5/17 上午8:39
+ * @author jade on 2017/5/17 上午8:39
  */
 public class _535_Encode_and_Decode_TinyURL {
 
@@ -83,6 +83,7 @@ public class _535_Encode_and_Decode_TinyURL {
     String shortUrl = q.encode(url);
     String decodeShortUrl = q.decode(shortUrl);
     System.out.println(shortUrl + ":" + decodeShortUrl);
+
 
   }
 

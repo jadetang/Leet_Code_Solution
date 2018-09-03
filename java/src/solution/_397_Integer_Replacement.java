@@ -3,7 +3,7 @@ package solution;
 import java.util.Arrays;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/27 下午5:12
+ * @author jade on 2016/11/27 下午5:12
  */
 public class _397_Integer_Replacement {
 

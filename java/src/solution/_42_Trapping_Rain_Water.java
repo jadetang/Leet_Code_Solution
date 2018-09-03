@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/1 下午5:48
+ * @author jade on 2017/7/1 下午5:48
  */
 public class _42_Trapping_Rain_Water {
 

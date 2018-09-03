@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/2 下午2:31
+ * @author jade on 2017/7/2 下午2:31
  */
 public class _118_Pascal_Triangle {
 

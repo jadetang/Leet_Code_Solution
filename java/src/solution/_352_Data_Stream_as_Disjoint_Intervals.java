@@ -5,7 +5,7 @@ import ds.Interval;
 import java.util.*;
 
 /**
- * @author sanguan.tangsicheng on 2016/12/5 上午12:21
+ * @author jade on 2016/12/5 上午12:21
  */
 public class _352_Data_Stream_as_Disjoint_Intervals {
 

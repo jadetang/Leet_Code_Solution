@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/9 上午9:59
+ * @author jade on 2017/7/9 上午9:59
  */
 public class _637_Average_of_Levels_in_Binary_Tree {
 

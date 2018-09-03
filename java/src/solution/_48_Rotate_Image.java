@@ -16,7 +16,7 @@ package solution;
  * vi.end()); for (int i = 0; i < matrix.size(); ++i) { for (int j = i + 1; j < matrix[i].size();
  * ++j) swap(matrix[i][j], matrix[j][i]); } }
  *
- * @author sanguan.tangsicheng on 2017/5/6 下午12:56
+ * @author jade on 2017/5/6 下午12:56
  */
 public class _48_Rotate_Image {
 

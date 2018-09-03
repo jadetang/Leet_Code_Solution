@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/2 上午10:01
+ * @author jade on 2017/7/2 上午10:01
  */
 public class _91_Decode_Ways {
 

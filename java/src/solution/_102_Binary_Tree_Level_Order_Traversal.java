@@ -11,7 +11,7 @@ import java.util.Queue;
 import ds.TreeNode;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/12 下午8:26
+ * @author jade on 2016/11/12 下午8:26
  */
 public class _102_Binary_Tree_Level_Order_Traversal {
 

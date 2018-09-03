@@ -20,7 +20,7 @@ import tag.Backtracking;
  * [ ['A','B','C','E'], ['S','F','C','S'], ['A','D','E','E'] ] word = "ABCCED", -> returns true,
  * word = "SEE", -> returns true, word = "ABCB", -> returns false.
  *
- * @author sanguan.tangsicheng on 2017/5/9 下午5:43
+ * @author jade on 2017/5/9 下午5:43
  */
 public class _79_Word_Search implements Array, Backtracking, Medium {
 

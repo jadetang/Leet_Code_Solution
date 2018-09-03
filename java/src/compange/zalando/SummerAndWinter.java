@@ -1,7 +1,7 @@
 package compange.zalando;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/5 上午8:05
+ * @author jade on 2017/7/5 上午8:05
  */
 public class SummerAndWinter {
 

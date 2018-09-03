@@ -3,7 +3,7 @@ package solution;
 import java.util.Random;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/13 下午4:21
+ * @author jade on 2016/11/13 下午4:21
  */
 public class _398_Random_Pick_Index {
 

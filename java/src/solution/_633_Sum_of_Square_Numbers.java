@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/30 下午3:24
+ * @author jade on 2017/7/30 下午3:24
  */
 public class _633_Sum_of_Square_Numbers {
 

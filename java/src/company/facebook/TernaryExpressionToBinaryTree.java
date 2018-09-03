@@ -18,7 +18,7 @@ import java.util.Deque;
  * if(expression[i]==":") pop the node(here :pop c) again pop the node and let the newly formed root
  * be the right child of this node. (pop b and then d = b.right) push the right child (here : d)
  *
- * @author sanguan.tangsicheng on 2017/6/15 下午7:44
+ * @author jade on 2017/6/15 下午7:44
  */
 public class TernaryExpressionToBinaryTree {
 

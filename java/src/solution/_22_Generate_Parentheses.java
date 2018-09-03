@@ -8,7 +8,7 @@ import java.util.List;
  * adding 1 too many close). Once we add a '(' we will then discard it and try a ')' which can only
  * close a valid '('. Each of these steps are recursively called.
  *
- * @author sanguan.tangsicheng on 2017/7/1 下午12:23
+ * @author jade on 2017/7/1 下午12:23
  */
 public class _22_Generate_Parentheses {
 

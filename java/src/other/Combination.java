@@ -6,7 +6,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author sanguan.tangsicheng on 2016/12/3 上午10:26
+ * @author jade on 2016/12/3 上午10:26
  */
 public class Combination {
 

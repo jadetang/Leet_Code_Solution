@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/3 上午8:03
+ * @author jade on 2017/7/3 上午8:03
  */
 public class _198_Robber_House {
 

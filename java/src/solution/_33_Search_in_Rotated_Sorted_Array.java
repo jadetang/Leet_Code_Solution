@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/1 下午5:03
+ * @author jade on 2017/7/1 下午5:03
  */
 public class _33_Search_in_Rotated_Sorted_Array {
 

@@ -6,7 +6,7 @@ import java.util.Map.Entry;
 import java.util.stream.IntStream;
 
 /**
- * @author sanguan.tangsicheng on 2017/6/24 下午3:28
+ * @author jade on 2017/6/24 下午3:28
  */
 public class ArrayIntersect {
 

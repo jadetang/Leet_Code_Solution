@@ -3,7 +3,7 @@ package solution;
 import ds.TreeNode;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/2 下午2:59
+ * @author jade on 2017/7/2 下午2:59
  */
 public class _124_Binary_Tree_Maximu_Path_Sum {
 

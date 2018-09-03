@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author sanguan.tangsicheng on 2017/5/12 下午5:39
+ * @author jade on 2017/5/12 下午5:39
  */
 public class _282_Game_Of_Live {
 

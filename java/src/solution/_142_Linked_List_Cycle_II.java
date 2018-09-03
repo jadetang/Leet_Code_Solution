@@ -6,7 +6,7 @@ import ds.ListNode;
  * Given a linked list, return the node where the cycle begins. If there is no cycle, return null.
  * Note: Do not modify the linked list.
  *
- * @author sanguan.tangsicheng on 2017/5/21 下午4:24
+ * @author jade on 2017/5/21 下午4:24
  */
 public class _142_Linked_List_Cycle_II {
 

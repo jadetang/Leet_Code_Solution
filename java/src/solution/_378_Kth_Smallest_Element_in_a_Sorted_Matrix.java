@@ -4,7 +4,7 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/15 下午10:07
+ * @author jade on 2016/11/15 下午10:07
  */
 public class _378_Kth_Smallest_Element_in_a_Sorted_Matrix {
 

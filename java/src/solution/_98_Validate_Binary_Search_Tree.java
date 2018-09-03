@@ -5,7 +5,7 @@ import ds.TreeNode;
 /**
  * 还有一种解法不是，中序遍历树，得到一个严格递增的队列
  *
- * @author sanguan.tangsicheng on 2017/7/2 上午10:47
+ * @author jade on 2017/7/2 上午10:47
  */
 public class _98_Validate_Binary_Search_Tree {
 

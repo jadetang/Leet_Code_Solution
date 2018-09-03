@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
- * @author sanguan.tangsicheng on 2017/6/5 下午11:05
+ * @author jade on 2017/6/5 下午11:05
  */
 public class _609_Find_Duplicate_File_in_System {
 

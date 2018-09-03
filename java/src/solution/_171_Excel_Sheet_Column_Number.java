@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/2 下午11:09
+ * @author jade on 2017/7/2 下午11:09
  */
 public class _171_Excel_Sheet_Column_Number {
 

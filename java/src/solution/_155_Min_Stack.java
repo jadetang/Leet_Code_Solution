@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/2 下午9:49
+ * @author jade on 2017/7/2 下午9:49
  */
 public class _155_Min_Stack {
 

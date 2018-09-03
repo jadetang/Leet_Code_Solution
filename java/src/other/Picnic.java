@@ -10,7 +10,7 @@ import java.util.List;
  * other could be grouped as a team. For n students, there m pairs of friends, find out how many
  * different forms of groups can be.
  *
- * @author sanguan.tangsicheng on 2016/11/26 下午12:26
+ * @author jade on 2016/11/26 下午12:26
  */
 public class Picnic {
 

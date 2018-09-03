@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/3 上午7:34
+ * @author jade on 2017/7/3 上午7:34
  */
 public class _189_Rotate_Array {
 

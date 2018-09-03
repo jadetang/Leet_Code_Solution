@@ -3,7 +3,7 @@ package solution;
 import java.util.BitSet;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/16 上午8:02
+ * @author jade on 2016/11/16 上午8:02
  */
 public class _319_Bulb_Switcher {
 

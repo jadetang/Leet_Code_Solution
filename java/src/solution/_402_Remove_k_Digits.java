@@ -3,7 +3,7 @@ package solution;
 import java.util.Stack;
 
 /**
- * @author sanguan.tangsicheng on 16/9/19 上午9:07
+ * @author jade on 16/9/19 上午9:07
  */
 public class _402_Remove_k_Digits {
 

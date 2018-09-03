@@ -1,7 +1,7 @@
 package other;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/1 下午5:55
+ * @author jade on 2017/7/1 下午5:55
  */
 public class BinarySearch {
 

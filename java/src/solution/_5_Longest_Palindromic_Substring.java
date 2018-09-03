@@ -3,7 +3,7 @@ package solution;
 /**
  * 表示以 i 和 j 结尾的substring是否是 p， boolean[i][j]  = boolean[i-1][j-1] && s.charAt(i) == s.charAt(j);
  *
- * @author sanguan.tangsicheng on 2017/7/1 上午9:21
+ * @author jade on 2017/7/1 上午9:21
  */
 public class _5_Longest_Palindromic_Substring {
 

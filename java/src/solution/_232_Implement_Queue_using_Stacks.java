@@ -3,7 +3,7 @@ package solution;
 import java.util.ArrayDeque;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/10 上午7:21
+ * @author jade on 2017/7/10 上午7:21
  */
 public class _232_Implement_Queue_using_Stacks {
 

@@ -3,7 +3,7 @@ package ds;
 import java.util.List;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/27 下午8:19
+ * @author jade on 2016/11/27 下午8:19
  */
 public class NestedInteger {
 

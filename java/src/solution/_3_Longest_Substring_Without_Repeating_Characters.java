@@ -6,7 +6,7 @@ import java.util.Set;
 /**
  * //用 双指针 中间用一个 hashset，或者 array（类似于 hashset）
  *
- * @author sanguan.tangsicheng on 2017/7/1 上午9:05
+ * @author jade on 2017/7/1 上午9:05
  */
 public class _3_Longest_Substring_Without_Repeating_Characters {
 

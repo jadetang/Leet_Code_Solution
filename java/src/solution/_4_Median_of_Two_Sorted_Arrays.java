@@ -3,7 +3,7 @@ package solution;
 /**
  * 找第 k 个数字， log（min（n,m））
  *
- * @author sanguan.tangsicheng on 2017/7/1 上午9:14
+ * @author jade on 2017/7/1 上午9:14
  */
 public class _4_Median_of_Two_Sorted_Arrays {
 

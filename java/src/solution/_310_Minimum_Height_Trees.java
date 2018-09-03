@@ -29,7 +29,7 @@ import java.util.List;
  *
  * 从叶子节点删起，最后剩下的一个或者两个节点就是 root 节点。
  *
- * @author sanguan.tangsicheng on 2017/5/22 下午1:54
+ * @author jade on 2017/5/22 下午1:54
  */
 public class _310_Minimum_Height_Trees {
 

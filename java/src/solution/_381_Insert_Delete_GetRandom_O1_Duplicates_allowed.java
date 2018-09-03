@@ -5,7 +5,7 @@ import level.Hard;
 import java.util.*;
 
 /**
- * @author sanguan.tangsicheng on 2016/12/1 上午7:42
+ * @author jade on 2016/12/1 上午7:42
  */
 public class _381_Insert_Delete_GetRandom_O1_Duplicates_allowed implements Hard {
 

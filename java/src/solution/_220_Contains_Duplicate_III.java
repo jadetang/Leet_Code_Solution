@@ -4,7 +4,7 @@ import java.util.NavigableSet;
 import java.util.TreeSet;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/12 下午11:47
+ * @author jade on 2017/7/12 下午11:47
  */
 public class _220_Contains_Duplicate_III {
 

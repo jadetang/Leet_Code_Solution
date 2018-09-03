@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/2 上午9:21
+ * @author jade on 2017/7/2 上午9:21
  */
 public class _88_Merge_Sorted_Array {
 

@@ -1,7 +1,7 @@
 package ds;
 
 /**
- * @author sanguan.tangsicheng on 16/7/16 上午11:44
+ * @author jade on 16/7/16 上午11:44
  */
 
 import java.util.*;

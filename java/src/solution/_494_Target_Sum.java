@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/27 上午8:09
+ * @author jade on 2017/7/27 上午8:09
  */
 public class _494_Target_Sum {
 

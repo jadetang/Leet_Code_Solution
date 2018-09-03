@@ -3,7 +3,7 @@ package solution;
 import java.util.*;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/7 下午5:19
+ * @author jade on 2017/7/7 下午5:19
  */
 public class _315_Count_of_Smaller_Numbers_After_Self {
 

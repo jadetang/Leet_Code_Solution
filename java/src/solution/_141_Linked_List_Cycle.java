@@ -3,7 +3,7 @@ package solution;
 import ds.ListNode;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/2 下午6:17
+ * @author jade on 2017/7/2 下午6:17
  */
 public class _141_Linked_List_Cycle {
 

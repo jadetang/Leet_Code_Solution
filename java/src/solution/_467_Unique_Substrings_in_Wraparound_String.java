@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2016/12/7 下午9:19
+ * @author jade on 2016/12/7 下午9:19
  */
 public class _467_Unique_Substrings_in_Wraparound_String {
 

@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
  * same shifting sequence. <p> For example, given: ["abc", "bcd", "acef", "xyz", "az", "ba", "a",
  * "z"], A solution is: <p> [ ["abc","bcd","xyz"], ["az","ba"], ["acef"], ["a","z"] ]
  *
- * @author sanguan.tangsicheng on 2017/7/31 上午9:58
+ * @author jade on 2017/7/31 上午9:58
  */
 public class _249_Group_Shifted_Strings {
 

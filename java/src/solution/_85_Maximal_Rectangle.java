@@ -4,7 +4,7 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 /**
- * @author sanguan.tangsicheng on 2017/6/10 下午4:45
+ * @author jade on 2017/6/10 下午4:45
  */
 public class _85_Maximal_Rectangle {
 

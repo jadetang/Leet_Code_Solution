@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author sanguan.tangsicheng on 2017/5/19 下午4:05
+ * @author jade on 2017/5/19 下午4:05
  */
 public class _93_Restore_IP_Addresses {
 

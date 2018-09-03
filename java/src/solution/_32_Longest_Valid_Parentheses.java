@@ -9,7 +9,7 @@ import java.util.Deque;
  * which has length = 2. Another example is ")()())", where the longest valid parentheses substring
  * is "()()", which has length = 4. https://leetcode.com/problems/longest-valid-parentheses/
  *
- * @author sanguan.tangsicheng on 16/9/30 上午8:57
+ * @author jade on 16/9/30 上午8:57
  */
 public class _32_Longest_Valid_Parentheses {
 

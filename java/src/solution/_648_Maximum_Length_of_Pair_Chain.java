@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/31 上午7:18
+ * @author jade on 2017/7/31 上午7:18
  */
 public class _648_Maximum_Length_of_Pair_Chain {
 

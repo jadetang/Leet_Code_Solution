@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/1 下午9:09
+ * @author jade on 2017/7/1 下午9:09
  */
 public class _66_Plus_One {
 

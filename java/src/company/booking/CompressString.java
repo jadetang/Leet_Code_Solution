@@ -1,7 +1,7 @@
 package company.booking;
 
 /**
- * @author sanguan.tangsicheng on 2017/6/25 上午9:46
+ * @author jade on 2017/6/25 上午9:46
  */
 public class CompressString {
 

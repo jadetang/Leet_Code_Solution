@@ -3,7 +3,7 @@ package solution;
 import java.util.Stack;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/17 下午10:10
+ * @author jade on 2016/11/17 下午10:10
  */
 public class _394_Decode_String {
 

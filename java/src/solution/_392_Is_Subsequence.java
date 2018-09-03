@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/14 上午7:14
+ * @author jade on 2016/11/14 上午7:14
  */
 public class _392_Is_Subsequence {
 

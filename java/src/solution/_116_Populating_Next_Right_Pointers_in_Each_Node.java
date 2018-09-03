@@ -5,7 +5,7 @@ import ds.TreeLinkNode;
 /**
  * 也可以分层次遍历树，然后得到一个个列表，然后连起来。
  *
- * @author sanguan.tangsicheng on 2017/7/2 下午2:28
+ * @author jade on 2017/7/2 下午2:28
  */
 public class _116_Populating_Next_Right_Pointers_in_Each_Node {
 

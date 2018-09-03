@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/3 上午7:40
+ * @author jade on 2017/7/3 上午7:40
  */
 public class _190_Reverse_Bits {
 

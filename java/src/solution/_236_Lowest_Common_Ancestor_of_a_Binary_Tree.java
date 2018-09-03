@@ -6,7 +6,7 @@ import java.util.Queue;
 import ds.TreeNode;
 
 /**
- * @author sanguan.tangsicheng on 2017/6/14 下午7:18
+ * @author jade on 2017/6/14 下午7:18
  */
 public class _236_Lowest_Common_Ancestor_of_a_Binary_Tree {
 

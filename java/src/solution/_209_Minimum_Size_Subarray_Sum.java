@@ -3,7 +3,7 @@ package solution;
 import java.util.TreeMap;
 
 /**
- * @author sanguan.tangsicheng on 2017/5/4 下午4:57
+ * @author jade on 2017/5/4 下午4:57
  */
 public class _209_Minimum_Size_Subarray_Sum {
 

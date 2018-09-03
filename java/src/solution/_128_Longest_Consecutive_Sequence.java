@@ -14,7 +14,7 @@ import java.util.Set;
  *
  * Show Tags Show Similar Problems
  *
- * @author sanguan.tangsicheng on 2017/5/21 下午5:23
+ * @author jade on 2017/5/21 下午5:23
  */
 public class _128_Longest_Consecutive_Sequence {
 

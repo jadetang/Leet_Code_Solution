@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/6 上午8:38
+ * @author jade on 2017/7/6 上午8:38
  */
 public class _240_Search_a_2D_Matrix_II {
 

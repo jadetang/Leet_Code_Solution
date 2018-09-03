@@ -3,7 +3,7 @@ package company.booking;
 /**
  * http://www.geeksforgeeks.org/find-maximum-number-possible-by-doing-at-most-k-swaps/
  *
- * @author sanguan.tangsicheng on 2017/7/8 下午5:47
+ * @author jade on 2017/7/8 下午5:47
  */
 public class Swap {
 

@@ -12,7 +12,7 @@ import java.util.stream.IntStream;
  * 2) Now run a modified LIS process where we compare the second element of already finalized LIS
  * with the first element of new LIS being constructed.
  *
- * @author sanguan.tangsicheng on 2017/8/6 下午9:07
+ * @author jade on 2017/8/6 下午9:07
  */
 public class _646_Maximum_Length_of_Pair_Chain {
 

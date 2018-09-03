@@ -1,7 +1,7 @@
 package other;
 
 /**
- * @author sanguan.tangsicheng on 2017/6/11 下午9:44
+ * @author jade on 2017/6/11 下午9:44
  */
 public class Longest_Palindrome_in_a_String {
 

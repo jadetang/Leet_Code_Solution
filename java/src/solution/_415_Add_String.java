@@ -3,7 +3,7 @@ package solution;
 import java.util.Arrays;
 
 /**
- * @author sanguan.tangsicheng on 2016/10/24 下午8:07
+ * @author jade on 2016/10/24 下午8:07
  */
 public class _415_Add_String {
 

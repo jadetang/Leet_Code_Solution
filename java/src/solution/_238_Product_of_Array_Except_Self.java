@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/5 下午10:41
+ * @author jade on 2017/7/5 下午10:41
  */
 public class _238_Product_of_Array_Except_Self {
 

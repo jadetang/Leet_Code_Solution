@@ -7,7 +7,7 @@ import java.util.Stack;
 
 */
 /**
- * @author sanguan.tangsicheng on 16/7/16 下午12:09
+ * @author jade on 16/7/16 下午12:09
  *//*
 
 public class Solution {

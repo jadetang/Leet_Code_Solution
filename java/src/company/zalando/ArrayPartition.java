@@ -6,7 +6,7 @@ package company.zalando;
  * [8,6] all the numbers in the second partition are greater than first. The solution has to work in
  * O(n).
  *
- * @author sanguan.tangsicheng on 2017/7/25 上午8:47
+ * @author jade on 2017/7/25 上午8:47
  */
 public class ArrayPartition {
 

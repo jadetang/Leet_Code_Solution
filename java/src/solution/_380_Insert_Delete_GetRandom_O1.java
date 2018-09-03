@@ -3,7 +3,7 @@ package solution;
 import java.util.*;
 
 /**
- * @author sanguan.tangsicheng on 16/8/4 下午10:54
+ * @author jade on 16/8/4 下午10:54
  */
 public class _380_Insert_Delete_GetRandom_O1 {
 

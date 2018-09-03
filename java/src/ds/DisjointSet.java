@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * @author sanguan.tangsicheng on 2016/12/4 下午7:18
+ * @author jade on 2016/12/4 下午7:18
  */
 public class DisjointSet {
 

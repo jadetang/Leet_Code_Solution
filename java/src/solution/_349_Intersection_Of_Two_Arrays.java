@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 /**
- * @author sanguan.tangsicheng on 16/7/12 上午10:46
+ * @author jade on 16/7/12 上午10:46
  */
 public class _349_Intersection_Of_Two_Arrays {
 

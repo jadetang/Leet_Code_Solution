@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2016/12/8 下午10:27
+ * @author jade on 2016/12/8 下午10:27
  */
 public class _410_Split_Array_Largest_Sum {
 

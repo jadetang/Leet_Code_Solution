@@ -3,7 +3,7 @@ package solution;
 import ds.ListNode;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/3 下午1:42
+ * @author jade on 2017/7/3 下午1:42
  */
 public class _206_Reverse_Linked_List {
 

@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/16 下午8:22
+ * @author jade on 2016/11/16 下午8:22
  */
 public class _318_Maximum_Product_of_Word_Lengths {
 

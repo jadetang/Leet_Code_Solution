@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/22 上午7:41
+ * @author jade on 2016/11/22 上午7:41
  */
 public class _459_Repeated_Substring_Pattern {
 

@@ -3,7 +3,7 @@ package solution;
 import ds.TreeNode;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/2 上午11:12
+ * @author jade on 2017/7/2 上午11:12
  */
 public class _104_Maximum_Depth_of_Binary_Tree {
 

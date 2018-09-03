@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/2 下午11:11
+ * @author jade on 2017/7/2 下午11:11
  */
 public class _172_Factorial_Trailing_Zeroes {
 

@@ -18,7 +18,7 @@ import java.util.Arrays;
  * For example, given n = 12, return 3 because 12 = 4 + 4 + 4; given n = 13, return 2 because 13 = 4
  * + 9.
  *
- * @author sanguan.tangsicheng on 2017/7/6 上午9:27
+ * @author jade on 2017/7/6 上午9:27
  */
 public class _279_Perfect_Square {
 

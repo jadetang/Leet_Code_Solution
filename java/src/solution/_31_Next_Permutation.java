@@ -8,7 +8,7 @@ package solution;
  * 交换4和7，即上面的swap函数，此时序列变成6，3，7，9，8，4，1 再将second＝9以及以后的序列重新排序，让其从小到大排序，使得整体最小，即reverse一下（因为此时肯定是递减序列）
  * 得到最终的结果：6，3，7，1，4，8，9
  *
- * @author sanguan.tangsicheng on 2017/7/1 下午4:56
+ * @author jade on 2017/7/1 下午4:56
  */
 public class _31_Next_Permutation {
 

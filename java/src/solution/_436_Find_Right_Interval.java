@@ -5,7 +5,7 @@ import ds.Interval;
 import java.util.Arrays;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/14 上午7:28
+ * @author jade on 2016/11/14 上午7:28
  */
 public class _436_Find_Right_Interval {
 

@@ -7,7 +7,7 @@ import java.util.List;
 import ds.Interval;
 
 /**
- * @author sanguan.tangsicheng on 2017/5/4 上午11:42
+ * @author jade on 2017/5/4 上午11:42
  */
 public class _56_Merge_Intervals {
 

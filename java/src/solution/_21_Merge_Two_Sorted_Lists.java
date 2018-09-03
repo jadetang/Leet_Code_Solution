@@ -5,7 +5,7 @@ import ds.ListNode;
 /**
  * 合并排序列表
  *
- * @author sanguan.tangsicheng on 2017/7/1 下午12:21
+ * @author jade on 2017/7/1 下午12:21
  */
 public class _21_Merge_Two_Sorted_Lists {
 

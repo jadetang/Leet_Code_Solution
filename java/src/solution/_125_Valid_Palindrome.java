@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/2 下午3:18
+ * @author jade on 2017/7/2 下午3:18
  */
 public class _125_Valid_Palindrome {
 

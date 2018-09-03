@@ -5,7 +5,7 @@ import ds.ListNode;
 import java.util.Random;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/13 下午3:53
+ * @author jade on 2016/11/13 下午3:53
  */
 public class _382_Linked_List_Random_Node {
 

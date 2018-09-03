@@ -5,7 +5,7 @@ import java.util.Arrays;
 import ds.Interval;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/17 下午6:35
+ * @author jade on 2016/11/17 下午6:35
  */
 public class _435_Non_overlapping_Intervals {
 

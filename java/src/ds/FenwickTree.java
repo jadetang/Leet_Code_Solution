@@ -1,7 +1,7 @@
 package ds;
 
 /**
- * @author sanguan.tangsicheng on 2017/6/23 上午8:49
+ * @author jade on 2017/6/23 上午8:49
  */
 public class FenwickTree {
 

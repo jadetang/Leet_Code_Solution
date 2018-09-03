@@ -6,7 +6,7 @@ import java.util.PriorityQueue;
 /**
  * 用堆来排序
  *
- * @author sanguan.tangsicheng on 2017/7/6 下午8:00
+ * @author jade on 2017/7/6 下午8:00
  */
 public class _295_Find_Median_from_Data_Stream {
 

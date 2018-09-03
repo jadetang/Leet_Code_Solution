@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 16/7/12 上午10:34
+ * @author jade on 16/7/12 上午10:34
  */
 public class _372_Super_Pow {
 

@@ -5,7 +5,7 @@ import java.util.HashMap;
 import solution._79_Word_Search.Point;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/2 下午7:06
+ * @author jade on 2017/7/2 下午7:06
  */
 public class _149_Max_Points_on_a_Line {
 

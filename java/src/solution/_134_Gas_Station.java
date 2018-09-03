@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/2 下午4:38
+ * @author jade on 2017/7/2 下午4:38
  */
 public class _134_Gas_Station {
 

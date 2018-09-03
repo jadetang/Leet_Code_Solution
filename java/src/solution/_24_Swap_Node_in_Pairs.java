@@ -3,7 +3,7 @@ package solution;
 import ds.ListNode;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/1 下午1:44
+ * @author jade on 2017/7/1 下午1:44
  */
 public class _24_Swap_Node_in_Pairs {
 

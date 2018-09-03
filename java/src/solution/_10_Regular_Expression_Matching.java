@@ -8,7 +8,7 @@ package solution;
  * multiple a or dp[i][j] = dp[i][j-1]   // in this case, a* counts as single a or dp[i][j] =
  * dp[i][j-2]   // in this case, a* counts as empty
  *
- * @author sanguan.tangsicheng on 16/7/16 上午11:50
+ * @author jade on 16/7/16 上午11:50
  */
 public class _10_Regular_Expression_Matching {
 

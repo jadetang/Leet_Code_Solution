@@ -10,7 +10,7 @@ package solution;
  *
  * The number of ways decoding "12" is 2.
  *
- * @author sanguan.tangsicheng on 2017/7/2 上午9:31
+ * @author jade on 2017/7/2 上午9:31
  */
 public class _79_Decode_Ways {
 

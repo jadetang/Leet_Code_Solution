@@ -3,7 +3,7 @@ package other;
 import java.util.Scanner;
 
 /**
- * @author sanguan.tangsicheng on 2017/5/25 下午8:56
+ * @author jade on 2017/5/25 下午8:56
  */
 public class PrefixToPostfix {
 

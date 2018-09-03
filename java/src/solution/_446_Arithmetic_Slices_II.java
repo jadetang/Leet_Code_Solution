@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/23 下午9:28 https://discuss.leetcode.com/topic/67413/detailed-explanation-for-java-o-n-2-solution
+ * @author jade on 2016/11/23 下午9:28 https://discuss.leetcode.com/topic/67413/detailed-explanation-for-java-o-n-2-solution
  */
 public class _446_Arithmetic_Slices_II implements Medium, DynamicProgramming {
 

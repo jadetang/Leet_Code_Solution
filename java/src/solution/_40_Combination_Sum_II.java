@@ -11,7 +11,7 @@ import java.util.List;
  * must not contain duplicate combinations. For example, given candidate set [10, 1, 2, 7, 6, 1, 5]
  * and target 8, A solution set is:
  *
- * @author sanguan.tangsicheng on 2017/7/8 上午9:14
+ * @author jade on 2017/7/8 上午9:14
  */
 public class _40_Combination_Sum_II {
 

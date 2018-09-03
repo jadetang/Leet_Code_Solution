@@ -11,7 +11,7 @@ import java.util.Set;
  * Output the words found in a stream of characters. - Input: Dictionary<string>, Stream - Output:
  * Dictionary containing words and their occurences. - Complexity, best case, worst case
  *
- * @author sanguan.tangsicheng on 2017/7/8 下午4:06
+ * @author jade on 2017/7/8 下午4:06
  */
 public class Output_the_words_found_in_a_stream_of_characters {
 

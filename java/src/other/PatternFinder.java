@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * @author sanguan.tangsicheng on 2017/5/31 下午5:08
+ * @author jade on 2017/5/31 下午5:08
  */
 public class PatternFinder {
 

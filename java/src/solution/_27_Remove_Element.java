@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 16/9/14 下午8:44
+ * @author jade on 16/9/14 下午8:44
  */
 public class _27_Remove_Element {
 

@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/12 下午8:10
+ * @author jade on 2016/11/12 下午8:10
  */
 public class _119_Pascals_Triangle_II {
 

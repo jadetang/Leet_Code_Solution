@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/12 下午3:33
+ * @author jade on 2016/11/12 下午3:33
  */
 public class _400_Nth_Digith {
 

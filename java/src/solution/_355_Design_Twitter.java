@@ -3,7 +3,7 @@ package solution;
 import java.util.*;
 
 /**
- * @author sanguan.tangsicheng on 16/7/13 下午9:27
+ * @author jade on 16/7/13 下午9:27
  */
 public class _355_Design_Twitter {
 

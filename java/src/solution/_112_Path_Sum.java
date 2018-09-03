@@ -4,7 +4,7 @@ package solution;
 
 */
 /**
- * @author sanguan.tangsicheng on 2016/11/10 上午8:51
+ * @author jade on 2016/11/10 上午8:51
  *//*
 
 public class _112_Path_Sum {

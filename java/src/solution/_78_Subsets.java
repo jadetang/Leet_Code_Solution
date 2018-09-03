@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/2 上午8:04
+ * @author jade on 2017/7/2 上午8:04
  */
 public class _78_Subsets {
 

@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * 用 trie
  *
- * @author sanguan.tangsicheng on 2017/7/30 下午6:57
+ * @author jade on 2017/7/30 下午6:57
  */
 public class _648_Replace_Words {
 

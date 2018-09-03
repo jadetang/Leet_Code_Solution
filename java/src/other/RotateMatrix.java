@@ -9,7 +9,7 @@ import java.util.PriorityQueue;
  * clockwise and anticlockwise direction. All rotations should be in-place. <p> 2 3 4 5 1 6 7 8 4 2
  * 1 9 5 3 2 4 should get transformed to <p> 1 2 3 4 4 7 1 5 5 6 2 8 3 2 4 9
  *
- * @author sanguan.tangsicheng on 2016/11/24 下午1:15
+ * @author jade on 2016/11/24 下午1:15
  */
 public class RotateMatrix {
 

@@ -13,7 +13,7 @@ import java.util.Arrays;
  *
  * [ [1,   3,  5,  7], [10, 11, 16, 20], [23, 30, 34, 50] ]
  *
- * @author sanguan.tangsicheng on 2017/5/21 下午3:48
+ * @author jade on 2017/5/21 下午3:48
  */
 public class _74_Search_a_2D_Matrix {
 

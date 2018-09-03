@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/2 下午11:18
+ * @author jade on 2017/7/2 下午11:18
  */
 public class _179_Largest_Number {
 

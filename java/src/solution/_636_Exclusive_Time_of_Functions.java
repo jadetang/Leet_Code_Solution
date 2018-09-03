@@ -5,7 +5,7 @@ import java.util.Deque;
 import java.util.List;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/16 上午9:47
+ * @author jade on 2017/7/16 上午9:47
  */
 public class _636_Exclusive_Time_of_Functions {
 

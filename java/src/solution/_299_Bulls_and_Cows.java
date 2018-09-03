@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2016/11/12 下午5:03
+ * @author jade on 2016/11/12 下午5:03
  */
 public class _299_Bulls_and_Cows {
 

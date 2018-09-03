@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2016/12/15 上午7:58
+ * @author jade on 2016/12/15 上午7:58
  */
 public class _371_Sum_Of_Integers {
 

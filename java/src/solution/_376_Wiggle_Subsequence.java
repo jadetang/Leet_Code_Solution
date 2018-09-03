@@ -3,7 +3,7 @@ package solution;
 import level.Medium;
 
 /**
- * @author sanguan.tangsicheng on 2016/12/1 上午8:25
+ * @author jade on 2016/12/1 上午8:25
  */
 public class _376_Wiggle_Subsequence implements Medium {
 

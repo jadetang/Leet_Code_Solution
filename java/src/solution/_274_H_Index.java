@@ -3,7 +3,7 @@ package solution;
 import java.util.Arrays;
 
 /**
- * @author sanguan.tangsicheng on 2017/7/31 上午8:31
+ * @author jade on 2017/7/31 上午8:31
  */
 public class _274_H_Index {
 

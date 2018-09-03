@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * @author sanguan.tangsicheng on 16/8/19 上午9:28
+ * @author jade on 16/8/19 上午9:28
  */
 public class _207_CourseSchedule {
 

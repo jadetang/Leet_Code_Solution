@@ -3,7 +3,7 @@ package solution;
 import java.util.List;
 
 /**
- * @author sanguan.tangsicheng on 2017/8/9 上午8:14
+ * @author jade on 2017/8/9 上午8:14
  */
 public class _524_Longest_Word_in_Dictionary_through_Deleting {
 

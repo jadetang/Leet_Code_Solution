@@ -1,7 +1,7 @@
 package solution;
 
 /**
- * @author sanguan.tangsicheng on 2017/5/12 下午8:04
+ * @author jade on 2017/5/12 下午8:04
  */
 public class _80_Remove_Duplicates_from_Sorted_Array_II {
 
