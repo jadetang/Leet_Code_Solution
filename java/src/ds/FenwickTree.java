@@ -19,7 +19,7 @@ public class FenwickTree {
     while (index < bit.length) {
       System.out.println(String.format("[%d,%d]", index, value));
       bit[index] += value;
-      index += index & (-index);
+      index += lowBit(index);
     }
   }
 
@@ -28,9 +28,14 @@ public class FenwickTree {
     index++;
     while (index > 0) {
       sum += bit[index];
-      index -= index & (-index);
+      index -= lowBit(index);
     }
     return sum;
+  }
+
+
+  private int lowBit(int i) {
+    return i & (-i);
   }
 
   public static void main(String[] args) {

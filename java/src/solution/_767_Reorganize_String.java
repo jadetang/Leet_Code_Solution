@@ -26,7 +26,7 @@ public class _767_Reorganize_String implements Medium{
 
   public static void main(String[] args) {
     _767_Reorganize_String q = new _767_Reorganize_String();
-    System.out.println(q.reorganizeString("aabcdefa"));
+    System.out.println(q.reorganizeString("aab"));
   }
 
 
@@ -37,7 +37,7 @@ public class _767_Reorganize_String implements Medium{
       count[c - 'a']++;
     }
     PriorityQueue<CharCount> pq = new PriorityQueue<>(
-        (o1, o2) -> o1.count == o2.count ? o1.c - o2.c : o2.count - o1.count);
+        (o1, o2) -> o1.count == o2.count ? o1.c - o2.c : o2.count - o1.count  );
     for (int i = 0; i < count.length; i++){
       if (count[i] > 0 ){
         if (count[i] > (n+1)/2){
@@ -50,7 +50,7 @@ public class _767_Reorganize_String implements Medium{
       }
     }
     StringBuilder stringBuilder = new StringBuilder();
-    while ( pq.size() > 2 ){
+    while ( pq.size() >= 2 ){
       CharCount c1 = pq.poll();
       CharCount c2 = pq.poll();
       stringBuilder.append(c1.c);
