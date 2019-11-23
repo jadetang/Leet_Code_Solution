@@ -1,15 +1,21 @@
 package company.booking;
 
+import java.util.LinkedHashSet;
+
 /**
  * @author jade on 2017/6/25 上午9:46
  */
 public class CompressString {
 
   public static void main(String[] args) {
+
     System.out.println(charFrequency("aaaabbbbccca"));
   }
 
   public static String charFrequency(String s) {
+
+    LinkedHashSet set = new LinkedHashSet();
+
     String res = "";
     int ind = 0;
     while (ind < s.length()) {

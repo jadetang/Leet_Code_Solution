@@ -13,7 +13,7 @@ package company.iress;
 // System.out.println("this is a debug message");
 
 class Solution {
-    public String solution(String s, String t) {
+    public String leetcode(String s, String t) {
         // write your code in Java SE 8
         if (s == null || t == null) {
             return "IMPOSSIBLE";
@@ -90,12 +90,12 @@ class Solution {
 
     public static void main(String[] args) {
         Solution s = new Solution();
-        System.out.println(s.solution("ABC", "ACB"));
-        System.out.println(s.solution("nice", "niece"));
-        System.out.println(s.solution("form", "from"));
-        System.out.println(s.solution("o", "odd"));
-        System.out.println(s.solution("aaaabbbbb", "aaaabbbbbb"));
-        System.out.println(s.solution("abc", "ab"));
+        System.out.println(s.leetcode("ABC", "ACB"));
+        System.out.println(s.leetcode("nice", "niece"));
+        System.out.println(s.leetcode("form", "from"));
+        System.out.println(s.leetcode("o", "odd"));
+        System.out.println(s.leetcode("aaaabbbbb", "aaaabbbbbb"));
+        System.out.println(s.leetcode("abc", "ab"));
 
         System.out.println("abc".substring(2, 4));
     }
