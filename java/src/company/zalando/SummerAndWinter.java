@@ -1,4 +1,4 @@
-package compange.zalando;
+package company.zalando;
 
 /**
  * @author jade on 2017/7/5 上午8:05

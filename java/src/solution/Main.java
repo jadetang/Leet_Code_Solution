@@ -1,17 +1,31 @@
 package solution;
 
+import static java.lang.Integer.toBinaryString;
+
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class Main {
 
-  public static void main(String[] args) {
+    public static void main(String[] args) {
+        List<String> s = new ArrayList<>();
+        s.add("x");
+        s.add("y");
+        s.add("z");
 
-    int Y = 85;
-    int X = 10;
-    int D = 30;
-    double x = ( Y - X ) / (double)D;
-    System.out.println(x);
-    Double j = Math.ceil( x );
-    System.out.println(j);
-  }
+        //  System.out.println(Integer.toBinaryString(getMask(0)));
+        //  System.out.println(Integer.toBinaryString(getMask(1)));
+        //  System.out.println(Integer.toBinaryString(getMask(2)));
+    }
+
+    public static int getMask(int i) {
+        int mask = 1;
+        while (i > 0) {
+            mask = mask << 1;
+            mask += 1;
+            i--;
+        }
+        return mask;
+    }
 }
