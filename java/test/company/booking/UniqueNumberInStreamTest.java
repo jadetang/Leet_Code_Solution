@@ -16,7 +16,7 @@ public class UniqueNumberInStreamTest {
 
     @Test
     public void test2() {
-        var u = new UniqueNumberInStream();
+        UniqueNumberInStream u = new UniqueNumberInStream();
         u.add(1);
         assertEquals(Integer.valueOf(1), u.getFirstUniqueNumber());
         u.add(2);
@@ -26,7 +26,7 @@ public class UniqueNumberInStreamTest {
 
     @Test
     public void test3() {
-        var u = new UniqueNumberInStream();
+        UniqueNumberInStream u = new UniqueNumberInStream();
         u.add(1);
         assertEquals(Integer.valueOf(1), u.getFirstUniqueNumber());
         u.add(2);
