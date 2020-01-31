@@ -14,10 +14,19 @@ package company.facebook;
  */
 public class Largest_sum_subarray_with_at_least_k_numbers {
 
-
-  public static int largetSum(int[] nums, int k) {
-
-    return 0;
-
+  public static int largestSum(int[] nums, int k) {
+    var prefixSum = new int[nums.length + 1];
+    var sum = 0;
+    for (int i = 0; i < nums.length; i++) {
+      sum += nums[i];
+      prefixSum[i + 1] = sum;
+    }
+    var ans = Integer.MIN_VALUE;
+    for (int l = k; l < nums.length; l++) {
+      for (int i = 0; i + k < prefixSum.length; i++) {
+        ans = Math.max(ans, prefixSum[i + k] - prefixSum[i]);
+      }
+    }
+    return ans;
   }
 }
