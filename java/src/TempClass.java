@@ -1,7 +1,11 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class TempClass {
 
@@ -32,6 +36,9 @@ public class TempClass {
     list.add(2);
     list.add(3);
     list.add(4);
+    int[] a = list.stream().mapToInt(Integer::intValue).toArray();
+    List<Integer> x = IntStream.of(a).boxed().collect(Collectors.toList());
+    Collections.sort(list, Comparator.comparingInt(Integer::intValue));
     System.out.println(TempClass.kSub(3, list));
   }
 
