@@ -1,12 +1,5 @@
 package solution;
 
-import ds.Digraph;
-import ds.DirectedDFS;
-
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Stack;
-
 /**
  * @author jade on 16/7/16 上午9:23
  */
