@@ -23,9 +23,6 @@ import tag.Backtracking;
  */
 public class _79_Word_Search implements Array, Backtracking, Medium {
 
-  char[][] board;
-
-  String word;
 
   public static void main(String[] args) {
     char[][] board = new char[][]{
@@ -37,109 +34,50 @@ public class _79_Word_Search implements Array, Backtracking, Medium {
     System.out.println(w.exist(board, "ABCB"));
   }
 
+  int row;
+  int col;
+  boolean[][] used;
+  int[] dir = new int[] {1, 0, -1, 0, 1};
   public boolean exist(char[][] board, String word) {
-    this.board = board;
-    this.word = word;
-    char b = word.charAt(0);
-    for (int i = 0; i < board.length; i++) {
-      for (int j = 0; j < board[0].length; j++) {
-        if (b == board[i][j]) {
-          StringBuilder sb = new StringBuilder();
-          sb.append(b);
-          Set<Point> path = new HashSet<>();
-          Point start = new Point(board, i, j);
-          path.add(start);
-          if (help(sb, path, start)) {
-            return true;
-          }
+    row = board.length;
+    col = board[0].length;
+    used = new boolean[row][col];
+    for (int i = 0; i < row; i++) {
+      for (int j = 0; j < col; j++) {
+        boolean result = dfs(board, word, 0, i, j);
+        if (result) {
+          return true;
         }
       }
     }
     return false;
-
   }
 
-  private boolean help(StringBuilder acc, Set<Point> path, Point cur) {
-    if (acc.toString().equals(word)) {
+  private boolean dfs(char[][] board, String word, int index, int r, int c) {
+    if (index == word.length()) {
       return true;
-    } else {
-      char nextChar = word.charAt(acc.length());
-      List<Point> adj = cur.adj();
-      adj = adj.stream().filter(point -> point.getChar() == nextChar && !path.contains(point))
-          .collect(Collectors.toList());
-      for (Point point : adj) {
-        path.add(point);
-        if (help(acc.append(point.getChar()), path, point)) {
-          return true;
-        } else {
-          path.remove(point);  //记得退栈
-          acc.deleteCharAt(acc.length() - 1);
-        }
-
-      }
+    }
+    if (r < 0 || r >= row || c < 0 || c >= col) {
       return false;
     }
-  }
-
-  public static class Point {
-
-    int x;
-
-    int y;
-    char[][] board;
-
-    public Point(char[][] board, int x, int y) {
-      this.board = board;
-      this.x = x;
-      this.y = y;
+    if (used[r][c]) {
+      return false;
     }
-
-    List<Point> adj() {
-      List<Point> points = new LinkedList<>();
-      for (int i = -1; i < 2; i += 2) {
-
-        try {
-          Point p = new Point(board, x + i, y);
-          p.getChar();
-          points.add(p);
-        } catch (IndexOutOfBoundsException ignored) {
-
-        }
+    if (board[r][c] != word.charAt(index)) {
+      return false;
+    }
+    boolean result = false;
+    used[r][c] = true;
+    for (int i = 0; i < 4; i++) {
+      int nextRow = r + dir[i];
+      int nextCol = c + dir[i + 1];
+      result |= dfs(board, word, index + 1, nextRow, nextCol);
+      if (result) {
+        return true;
       }
-      for (int j = -1; j < 2; j += 2) {
-        try {
-          Point p = new Point(board, x, y + j);
-          p.getChar();
-          points.add(p);
-        } catch (IndexOutOfBoundsException ignored) {
-
-        }
-
-      }
-
-      return points;
     }
-
-    char getChar() {
-      return board[x][y];
-    }
-
-    @Override
-    public String toString() {
-      return getChar() + "";
-    }
-
-    @Override
-    public int hashCode() {
-      return x * board[0].length + y;
-    }
-
-    @Override
-    public boolean equals(Object that) {
-      Point p = (Point) that;
-      return this.x == p.x && this.y == p.y;
-    }
-
+    used[r][c] = false;
+    return result;
   }
 
 }

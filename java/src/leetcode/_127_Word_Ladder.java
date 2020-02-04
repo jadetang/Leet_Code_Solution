@@ -140,7 +140,7 @@ public class _127_Word_Ladder implements Medium, Amazon {
 
     private Map<String, Set<String>> graph;
 
-    public Graph(List<String> wordList) {
+    public  Graph(List<String> wordList) {
       graph = new HashMap<>();
       wordList.forEach(s -> graph.put(s, new HashSet<>()));
 

@@ -1,7 +1,7 @@
 package leetcode;
 
 import java.util.HashMap;
-import leetcode._79_Word_Search.Point;
+import ds.Point;
 
 /**
  * @author jade on 2017/7/2 下午7:06

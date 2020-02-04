@@ -1,64 +1,106 @@
-/*
 package leetcode;
 
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
-import java.util.Stack;
+import java.util.Set;
+import org.junit.Test;
+import util.Assert;
 
-*/
+
 /**
  * @author jade on 2017/5/21 下午5:44
- *//*
+ */
 
 public class _301_Remove_Invalid_Parentheses {
 
+    char[] chars;
 
+    int leftToRemove;
+
+    int rightToRemove;
+
+    int n;
+
+    Set<String> ans = new HashSet<>();
 
     public List<String> removeInvalidParentheses(String s) {
-        Character  p = invalidParentheses(s);
-        return null;
+        this.chars = s.toCharArray();
+        this.n = chars.length;
+        int[] parenthesesToRemove = calculateRemove(s);
+        this.leftToRemove = parenthesesToRemove[0];
+        this.rightToRemove = parenthesesToRemove[1];
+        if (leftToRemove == 0 && rightToRemove == 0) {
+            ans.add(s);
+            return new ArrayList<>(ans);
+        }
+        dfs(new StringBuilder(), 0, 0, 0);
+        return new ArrayList<>(ans);
+    }
+
+    private void dfs(StringBuilder sb, int index, int removedLeft, int removedRight) {
+        if (index == n) {
+            if (removedLeft == leftToRemove && removedRight == rightToRemove && isValid(sb.toString())){
+                ans.add(sb.toString());
+            }
+        }else {
+            char c = chars[index];
+            if (c == '(') {
+                if (removedLeft < leftToRemove) {
+                    dfs(new StringBuilder(sb.toString()), index + 1, removedLeft + 1, removedRight);
+                }
+                dfs(new StringBuilder(sb.toString()).append(c), index + 1, removedLeft, removedRight);
+            }else if (c == ')') {
+                if (removedRight < rightToRemove) {
+                    dfs(new StringBuilder(sb.toString()), index + 1, removedLeft, removedRight + 1);
+                }
+                dfs(new StringBuilder(sb.toString()).append(c), index + 1, removedLeft, removedRight);
+            }else {
+                dfs(new StringBuilder(sb.toString()).append(c), index + 1, removedLeft, removedRight);
+            }
+        }
+    }
+
+    private boolean isValid(String s) {
+        int[] a = calculateRemove(s);
+        return a[0] == 0 && a[1] == 0;
     }
 
 
-    public int invalidParentheses(String s){
-
-        Stack<Character> stack = new Stack<>();
-        for (Character c: s.toCharArray()){
-            if ( c == '('){
-                stack.push(c);
-            }else {
-                if (c == ')') {
-                    if (stack.isEmpty()) {
-                        return c;
-                    } else {
-                        Character pop = stack.pop();
-                        if (pop == ')') {
-                            return c;
-                        }
-                    }
-
+    private int[] calculateRemove(String s) {
+        int left = 0;
+        int rightToRemove = 0;
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (c == '(') {
+                left++;
+            }else if (c == ')') {
+                if (left == 0) {
+                    rightToRemove++;
+                }else {
+                    left--;
                 }
             }
         }
-        if (!stack.isEmpty()){
-            return stack.pop();
-        }else {
-            return ' ';
-        }
+        return new int[]{left, rightToRemove};
     }
 
-    public static void main(String[] args) {
-        _301_Remove_Invalid_Parentheses r = new _301_Remove_Invalid_Parentheses();
-        testInvalidParentheses(r);
+    @Test
+    public void test1() {
+        _301_Remove_Invalid_Parentheses a = new _301_Remove_Invalid_Parentheses();
+        String s = "())";
+        List<String> ans = a.removeInvalidParentheses(s);
+        System.out.println(ans);
+        Assert.assertEqual(1, ans.size());
     }
 
-    private static void testInvalidParentheses(_301_Remove_Invalid_Parentheses r) {
-        System.out.println(r.invalidParentheses("()())()"));
-        System.out.println(r.invalidParentheses("(a)())()"));
-        System.out.println(r.invalidParentheses(")("));
-        System.out.println(r.invalidParentheses("()("));
-        System.out.println(r.invalidParentheses("(()"));
-
+    @Test
+    public void test2() {
+        _301_Remove_Invalid_Parentheses a = new _301_Remove_Invalid_Parentheses();
+        String s = "()())()";
+        List<String> ans = a.removeInvalidParentheses(s);
+        System.out.println(ans);
+        Assert.assertEqual(2, ans.size());
     }
-
 }
-*/
+
