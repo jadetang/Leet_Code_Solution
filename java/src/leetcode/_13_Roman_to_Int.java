@@ -6,27 +6,20 @@ package leetcode;
 public class _13_Roman_to_Int {
 
   public static int romanToInt(String s) {
-
     int res = 0;
     for (int i = 0; i < s.length(); i++) {
-
       if (i > 0 && c2n(s.charAt(i)) > c2n(s.charAt(i - 1))) {
         res += c2n(s.charAt(i)) - 2 * c2n(s.charAt(i - 1));
       } else {
         res += c2n(s.charAt(i));
       }
-
-
     }
     return res;
-
-
   }
 
   public static void main(String[] args) {
     System.out.println(romanToInt("IX"));
   }
-
 
   private static int c2n(char c) {
     switch (c) {

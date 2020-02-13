@@ -31,16 +31,6 @@ public class _50_Pow {
     System.out.println(myPow(2.0, 0));
   }
 
-  double myPow2(double x, int n) {
-    if (n == 0) {
-      return 1;
-    }
-    if (n < 0) {
-      n = -n;
-      x = 1 / x;
-    }
-    return n % 2 == 0 ? myPow2(x * x, n / 2) : x * myPow2(x * x, n / 2);
-  }
 
   double myPow3(double x, int n) {
     if (n == 0) {

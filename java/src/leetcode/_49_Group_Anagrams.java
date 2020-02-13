@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * @author jade on 2017/7/1 下午7:50
@@ -47,16 +48,10 @@ public class _49_Group_Anagrams {
 
     for (String s : strs) {
       String orderS = ordered(s);
-      if (!dict.containsKey(orderS)) {
-        dict.put(orderS, new LinkedList<>());
-      }
-      dict.get(orderS).add(s);
+      dict.computeIfAbsent(orderS, k -> new ArrayList<>()).add(s);
     }
     List<List<String>> result = new LinkedList<>();
-    for (List<String> l : dict.values()) {
-      result.add(l);
-    }
-    return result;
+    return new ArrayList<>(dict.values());
   }
 
   private String ordered(String s) {

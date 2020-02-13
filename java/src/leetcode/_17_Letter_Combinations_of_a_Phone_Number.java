@@ -28,17 +28,12 @@ public class _17_Letter_Combinations_of_a_Phone_Number {
   }
 
   public List<String> letterCombinations(String digit) {
-
     if (digit == null || digit.length() == 0) {
-      return Collections.EMPTY_LIST;
+      return Collections.emptyList();
     }
-
     List<String> result = new LinkedList<>();
-
     dfs(result, new StringBuilder(), 0, digit);
-
     return result;
-
   }
 
   private void dfs(List<String> result, StringBuilder stringBuilder, int level, String digit) {

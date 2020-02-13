@@ -8,7 +8,6 @@ import java.util.Queue;
  */
 public class _200_Number_of_Islands {
 
-
   boolean[][] visited;
 
   int row;

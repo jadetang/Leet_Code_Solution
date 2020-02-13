@@ -48,8 +48,6 @@ public class _535_Encode_and_Decode_TinyURL {
     String shortUrl = q.encode(url);
     String decodeShortUrl = q.decode(shortUrl);
     System.out.println(shortUrl + ":" + decodeShortUrl);
-
-
   }
 
   // Encodes a URL to a shortened URL.

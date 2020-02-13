@@ -13,9 +13,7 @@ public class _206_Reverse_Linked_List {
     } else if (head.next == null) {
       return head;
     } else {
-
       return reserve(head, null);
-
     }
   }
 
@@ -27,7 +25,6 @@ public class _206_Reverse_Linked_List {
       ListNode c = cur.next;
       cur.next = pre;
       return reserve(c, cur);
-
     }
   }
 

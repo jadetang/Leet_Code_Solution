@@ -34,7 +34,7 @@ public class _212_word_searchII {
         outloop:
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < col; j++) {
-                dfs(new StringBuilder(), i, j);
+                dfs(trie.root, i, j);
                 if (ans.size() == words.length) {
                     break outloop;
                 }
@@ -43,15 +43,9 @@ public class _212_word_searchII {
         return new ArrayList<>(ans);
     }
 
-    private void dfs(StringBuilder sb, int i, int j) {
-        if (sb.length() > 0){
-            TrieNode node = trie.getNode(sb.toString());
-            if (node == null) {
-                return;
-            }
-            if (node.value != null) {
-                ans.add(node.value);
-            }
+    private void dfs(TrieNode preNode, int i, int j) {
+        if (preNode == null) {
+            return;
         }
         if (i < 0 || i >= row || j < 0 || j >= col) {
             return;
@@ -59,12 +53,18 @@ public class _212_word_searchII {
         if (used[i][j]) {
             return;
         }
-        sb.append(board[i][j]);
+        TrieNode currentNode = preNode.array[board[i][j] - 'a'];
+        if (currentNode == null) {
+            return;
+        }
+        if (currentNode.value != null) {
+            ans.add(currentNode.value);
+        }
         used[i][j] = true;
         for (int k = 0; k < 4; k++) {
             int nextR = i + dir[k];
             int nextC = j + dir[k + 1];
-            dfs(new StringBuilder(sb.toString()), nextR, nextC);
+            dfs(currentNode, nextR, nextC);
         }
         used[i][j] = false;
     }

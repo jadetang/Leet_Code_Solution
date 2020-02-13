@@ -9,7 +9,6 @@ public class _33_Search_in_Rotated_Sorted_Array {
     if (nums.length == 0) {
       return -1;
     }
-
     return search(nums, 0, nums.length - 1, target);
   }
 
@@ -26,10 +25,8 @@ public class _33_Search_in_Rotated_Sorted_Array {
       } else {
         return search(A, mid + 1, R, target);
       }
-
     }
   }
-
 
   int binarySearch(int[] A, int L, int R, int target) {
     while (L <= R) {
