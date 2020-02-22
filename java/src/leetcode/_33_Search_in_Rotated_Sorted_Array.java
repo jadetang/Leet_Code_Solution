@@ -12,7 +12,6 @@ public class _33_Search_in_Rotated_Sorted_Array {
     return search(nums, 0, nums.length - 1, target);
   }
 
-
   //二分查找法，当 A[L] <= A[R] 的时候，表示子数组已经有序了，可以用二分查找。
   int search(int[] A, int L, int R, int target) {
     if (A[L] <= A[R]) {

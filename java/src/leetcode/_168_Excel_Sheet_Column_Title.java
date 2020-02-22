@@ -8,9 +8,10 @@ public class _168_Excel_Sheet_Column_Title {
     public String convertToTitle(int n) {
         StringBuilder sb = new StringBuilder();
         while (n != 0) {
-            int re = n % 27;
-            sb.append((char)('A' + re - 1));
-            n /= 27;
+            n--;
+            int re = n % 26;
+            sb.append((char)('A' + re));
+            n /= 26;
         }
         return sb.reverse().toString();
     }

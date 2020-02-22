@@ -2,81 +2,50 @@ package leetcode;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
+import org.junit.Test;
+import util.Assert;
 
 /**
  * @author jade on 2017/6/10 下午4:45
  */
 public class _85_Maximal_Rectangle {
 
-  public static void main(String[] args) {
-    _85_Maximal_Rectangle q = new _85_Maximal_Rectangle();
-    char[][] matrix = new char[][]{"10100".toCharArray(), "10111".toCharArray(),
-        "11111".toCharArray(),
-        "10010".toCharArray()};
-    q.maximalRectangle(matrix);
+  @Test
+  public void test() {
+    _85_Maximal_Rectangle max = new _85_Maximal_Rectangle();
+    char[][] matrix = new char[][] {
+            {'1','0','1','0','0'},
+            {'1','0','1','1','1'},
+            {'1','1','1','1','1'},
+            {'1','0','0','1','0'}
+    };
+    Assert.assertEqual(6, max.maximalRectangle(matrix));
   }
 
   public int maximalRectangle(char[][] matrix) {
-    int max = 0;
-    if (matrix.length == 0) {
+    if (matrix.length == 0 || matrix[0].length == 0) {
       return 0;
     }
-    int[] preHeight = null;
+    int[][] width = new int[matrix.length][matrix[0].length];
+    int ans = 0;
     for (int i = 0; i < matrix.length; i++) {
-
-      int[] curHeight = update(preHeight, convert(matrix[i]));
-      max = Math.max(max, maxRectangle(curHeight));
-    }
-    return max;
-  }
-
-  private int[] convert(char[] array) {
-
-    int[] result = new int[array.length];
-    for (int i = 0; i < result.length; i++) {
-      result[i] = array[i] - 48;
-    }
-    return result;
-  }
-
-  private int maxRectangle(int[] height) {
-
-    Deque<Integer> stack = new ArrayDeque<>();
-
-    int len = height.length;
-    int max = 0;
-    for (int i = 0; i < len; ) {
-      if (stack.isEmpty() || height[i] >= height[stack.peek()]) {
-        stack.push(i++);
-      } else {
-        int h = stack.pop();
-        max = Math.max(max, height[h] * (stack.isEmpty() ? i : h - stack.peek() - 1));
-
-      }
-
-    }
-    while (!stack.isEmpty()) {
-      int h = stack.pop();
-      max = Math.max(max, height[h] * (stack.isEmpty() ? len : len - stack.peek() - 1));
-
-    }
-    return max;
-
-  }
-
-  public int[] update(int[] preHeight, int[] curHeight) {
-    if (preHeight == null) {
-      return curHeight;
-    } else {
-      int[] result = new int[curHeight.length];
-      for (int i = 0; i < preHeight.length; i++) {
-        if (curHeight[i] != '0' && preHeight[i] != 0) {
-          result[i] = curHeight[i] - 48 + preHeight[i];
+      for (int j = 0; j < matrix[0].length; j++) {
+        if (matrix[i][j] == '0') {
+          width[i][j] = 0;
         } else {
-          result[i] = curHeight[i] - 48;
+          if (j == 0) {
+            width[i][j] = 1;
+          } else {
+            width[i][j] = width[i][j - 1] + 1;
+          }
+          int tempWidth = Integer.MAX_VALUE;
+          for (int k = i; k >= 0 && width[k][j] > 0; k--) {
+            tempWidth = Math.min(tempWidth, width[k][j]);
+            ans = Math.max(ans, tempWidth * (i - k + 1));
+          }
         }
       }
-      return result;
     }
+    return ans;
   }
 }

@@ -1,8 +1,7 @@
 package leetcode;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
 import java.util.List;
+import java.util.Stack;
 
 /**
  * @author jade on 2017/7/16 上午9:47
@@ -11,7 +10,7 @@ public class _636_Exclusive_Time_of_Functions {
 
 
   public int[] exclusiveTime(int n, List<String> logs) {
-    Deque<Log> stack = new ArrayDeque<>();
+    Stack<Log> stack = new Stack<>();
 
     int[] logTime = new int[n];
 

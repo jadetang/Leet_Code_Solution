@@ -18,31 +18,23 @@ import java.util.Set;
  */
 public class _128_Longest_Consecutive_Sequence {
 
-
-  //如果要去 on 的算法，就用 hashset，否则先用排序
   public int longestConsecutive(int[] num) {
-    Set set = new HashSet();
+    Set<Integer> set = new HashSet<Integer>();
     for (int n : num) {
       set.add(n);
     }
-    int length = Integer.MIN_VALUE;
+    int length = 0;
     for (int n : num) {
-
-      int l = 1;
-      int temp = n;
-      while (set.contains(temp++)) {
-        l++;
-        set.remove(temp - 1);
+      if (set.contains(n - 1)) {
+        continue;
       }
-      temp = n;
-      while (set.contains(temp--)) {
-        l--;
-        set.remove(temp + 1);
+      int l = 0;
+      while (set.contains(n)) {
+        l++;
+        n++;
       }
       length = Math.max(length, l);
-
     }
     return length;
-
   }
 }
