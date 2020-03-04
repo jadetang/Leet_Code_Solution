@@ -2,8 +2,8 @@ package leetcode;
 
 import java.util.HashMap;
 import java.util.Map;
+import org.junit.Assert;
 import org.junit.Test;
-import util.Assert;
 
 public class _273_Integer_To_English_Word {
 
@@ -25,7 +25,7 @@ public class _273_Integer_To_English_Word {
         map.put(13, "Thirteen");
         map.put(14, "Fourteen");
         map.put(15, "Fifteen");
-        map.put(16,"Sixteen");
+        map.put(16, "Sixteen");
         map.put(17, "Seventeen");
         map.put(18, "Eighteen");
         map.put(19, "Nineteen");
@@ -40,15 +40,40 @@ public class _273_Integer_To_English_Word {
     }
 
     public String numberToWords(int num) {
-        if (num < 1000){
-            return covert(num);
-        }else {
-            return null;
+        if (num == 0) {
+            return "Zero";
         }
+        String result = "";
+        int billion = num / 1000000000;
+        int million = (num - 1000000000 * billion) / 1000000;
+        int thousand = (num - 1000000000 * billion - 1000000 * million) / 1000;
+        int rest = num - 1000000000 * billion - 1000000 * million - 1000 * thousand;
+        if (billion != 0) {
+            result += covert(billion) + " Billion";
+        }
+        if (million != 0) {
+            if (!result.isEmpty()) {
+                result += " ";
+            }
+            result += covert(million) + " Million";
+        }
+        if (thousand != 0) {
+            if (!result.isEmpty()) {
+                result += " ";
+            }
+            result += covert(thousand) + " Thousand";
+        }
+        if (rest != 0) {
+            if (!result.isEmpty()) {
+                result += " ";
+            }
+            result += covert(rest);
+        }
+        return result;
     }
 
     /**
-     0 - 999  to string
+     * 0 - 999  to string
      */
     String covert(int num) {
         if (num == 0) {
@@ -59,17 +84,23 @@ public class _273_Integer_To_English_Word {
         int firstDigit = (num / 100);
         StringBuilder sb = new StringBuilder();
         if (firstDigit != 0) {
-            sb.append(map.get(firstDigit) + " ");
-            sb.append("Hundred ");
+            sb.append(map.get(firstDigit));
+            sb.append(" Hundred");
         }
         if (secondDigit != 0) {
+            if (sb.length() > 0) {
+                sb.append(" ");
+            }
             if (lastDigit == 0 || secondDigit == 1) {
                 sb.append(map.get(secondDigit * 10 + lastDigit));
-            }else {
-                sb.append(map.get(secondDigit * 10) + " ");
-                sb.append(map.get(lastDigit));
+            } else {
+                sb.append(map.get(secondDigit * 10));
+                sb.append(" ").append(map.get(lastDigit));
             }
-        }else {
+        } else if (lastDigit != 0){
+            if (sb.length() > 0) {
+                sb.append(" ");
+            }
             sb.append(map.get(lastDigit));
         }
         return sb.toString();
@@ -78,8 +109,11 @@ public class _273_Integer_To_English_Word {
     @Test
     public void test() {
         _273_Integer_To_English_Word q = new _273_Integer_To_English_Word();
-        Assert.assertEqual("One Hundred Twelve", q.numberToWords(112));
-        Assert.assertEqual("One Hundred Twenty", q.numberToWords(120));
-        Assert.assertEqual("Nine Hundred Twenty One", q.numberToWords(921));
+        Assert.assertEquals("One Hundred Twelve", q.numberToWords(112));
+        Assert.assertEquals("One Hundred Twenty", q.numberToWords(120));
+        Assert.assertEquals("Nine Hundred Twenty One", q.numberToWords(921));
+        Assert.assertEquals("One Hundred", q.numberToWords(100));
+        Assert.assertEquals("One Thousand Nine Hundred Twenty One", q.numberToWords(1921));
+        Assert.assertEquals("One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven", q.numberToWords(1234567));
     }
 }

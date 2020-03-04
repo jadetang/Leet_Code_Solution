@@ -68,7 +68,6 @@ public class _28_strStr implements Easy {
         j = next[j];
       }
     }
-
     return next;
   }
 

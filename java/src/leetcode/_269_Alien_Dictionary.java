@@ -1,6 +1,5 @@
 package leetcode;
 
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -9,9 +8,8 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Queue;
 import java.util.stream.Collectors;
-import leetcode._767_Reorganize_String.CharCount;
+import org.junit.Assert;
 import org.junit.Test;
-import util.Assert;
 
 /**
  * There is a new alien language which uses the latin alphabet. However, the order among letters are unknown to you. You
@@ -49,7 +47,7 @@ public class _269_Alien_Dictionary {
                 "ett",
                 "rftt"};
         _269_Alien_Dictionary q = new _269_Alien_Dictionary();
-        Assert.assertEqual("wertf", q.alienOrder(words));
+        Assert.assertEquals("wertf", q.alienOrder(words));
     }
 
     public String alienOrder(String[] words) {
