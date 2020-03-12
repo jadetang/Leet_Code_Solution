@@ -1,5 +1,6 @@
 package leetcode;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -10,7 +11,31 @@ public class _93_Restore_IP_Addresses {
 
   public static void main(String[] args) {
     _93_Restore_IP_Addresses q = new _93_Restore_IP_Addresses();
-    System.out.println(q.restoreIpAddresses("25525511135"));
+    System.out.println(q.restoreIpAddresses2("25525511135"));
+  }
+
+  List<String> ans = new ArrayList<>();
+
+  public List<String> restoreIpAddresses2(String s) {
+      dfs(s, new ArrayList<>(), 0);
+      return ans;
+  }
+
+  private void dfs(String s, List<String> buff, int index) {
+    if (buff.size() == 4 && index == s.length()) {
+      ans.add(String.join(",", buff));
+    }else {
+      for (int i = index; i < s.length(); i++) {
+          String temp = s.substring(index,i + 1);
+          if (isValid(temp)) {
+            buff.add(temp);
+            dfs(s, buff, i + 1);
+            buff.remove(buff.size() - 1);
+          }else {
+            break;
+        }
+      }
+    }
   }
 
   public List<String> restoreIpAddresses(String s) {
