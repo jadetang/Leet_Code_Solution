@@ -19,7 +19,7 @@ import java.util.Set;
 public class _128_Longest_Consecutive_Sequence {
 
   public int longestConsecutive(int[] num) {
-    Set<Integer> set = new HashSet<Integer>();
+    Set<Integer> set = new HashSet<>();
     for (int n : num) {
       set.add(n);
     }

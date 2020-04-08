@@ -19,9 +19,9 @@ public class _636_Exclusive_Time_of_Functions {
       if (log.isStart()) {
         stack.push(log);
       } else {
-        Log start = stack.pop();
-        int time = log.timeStamp - start.timeStamp + 1;
-        logTime[start.id] += time;
+        Log currentLog = stack.pop();
+        int time = log.timeStamp - currentLog.timeStamp + 1;
+        logTime[currentLog.id] += time;
         if (!stack.isEmpty()) {
           logTime[stack.peek().id] -= time;
         }

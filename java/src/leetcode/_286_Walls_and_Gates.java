@@ -18,7 +18,7 @@ public class _286_Walls_and_Gates {
         }
     }
 
-    private void wallsAndGates(int[][] rooms) {
+    public void wallsAndGates(int[][] rooms) {
         int[] directions = new int[] {1, 0, -1, 0, 1};
         int max = Integer.MAX_VALUE;
         Queue<int[]> queue = new LinkedList<>();
