@@ -1,7 +1,18 @@
 package leetcode;
 
+import org.junit.Test;
+import util.Assert;
+
 public class _844_Backspace_String_Compare {
 
+  @Test
+  public void test() {
+    _844_Backspace_String_Compare q = new _844_Backspace_String_Compare();
+    Assert.assertTrue(q.backspaceCompare("a", "a"));
+    Assert.assertTrue(q.backspaceCompare("aa#", "a"));
+    Assert.assertTrue(q.backspaceCompare("acc#", "ac"));
+    Assert.assertTrue(q.backspaceCompare("cc####a", "a"));
+  }
 
   public boolean backspaceCompare(String S, String T) {
     int i = S.length() - 1, j = T.length() - 1;

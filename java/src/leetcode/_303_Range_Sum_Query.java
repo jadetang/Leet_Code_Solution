@@ -45,8 +45,6 @@ public class _303_Range_Sum_Query {
       }
       return sum;
     }
-
-
   }
 
 }

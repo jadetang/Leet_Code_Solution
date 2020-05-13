@@ -2,14 +2,13 @@ package leetcode;
 
 import java.util.Arrays;
 import org.junit.Test;
-import tag.Array;
 
 public class _689_Maximum_Sum_of_3_Non_Overlapping_Subarrays {
 
   @Test
   public void test() {
     _689_Maximum_Sum_of_3_Non_Overlapping_Subarrays q = new _689_Maximum_Sum_of_3_Non_Overlapping_Subarrays();
-    int[] nums = new int[] {1,2,1,2,6,7,5,1};
+    int[] nums = new int[]{1, 2, 1, 2, 6, 7, 5, 1};
     int[] result = q.maxSumOfThreeSubarrays(nums, 2);
     System.out.println(Arrays.toString(result));
   }
@@ -46,8 +45,8 @@ public class _689_Maximum_Sum_of_3_Non_Overlapping_Subarrays {
     int[] result = new int[3];
     Arrays.fill(result, -1);
     for (int i = k; i < n - k; i++) {
-      if (result[0] == -1  || dp[i] + dp[left[i - k ]] + dp[right[i + k]] >
-         dp[result[0]] + dp[result[1]] + dp[result[2]]) {
+      if (result[0] == -1 || dp[i] + dp[left[i - k]] + dp[right[i + k]] >
+          dp[result[0]] + dp[result[1]] + dp[result[2]]) {
         result[0] = left[i - k];
         result[1] = i;
         result[2] = right[i + k];
@@ -55,5 +54,4 @@ public class _689_Maximum_Sum_of_3_Non_Overlapping_Subarrays {
     }
     return result;
   }
-
 }
