@@ -1,5 +1,7 @@
 package leetcode;
 
+import java.util.HashMap;
+import java.util.Map;
 import org.junit.Test;
 import util.Assert;
 
@@ -11,7 +13,27 @@ public class _525_Contiguous_Array {
         _525_Contiguous_Array q = new _525_Contiguous_Array();
         Assert.assertEqual(4, q.findMaxLength(nums));
     }
+
     public int findMaxLength(int[] nums) {
+        Map<Integer,Integer> map = new HashMap<>();
+        int count = 0;
+        int ans = 0;
+        map.put(0, 0);
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == 0) {
+                count--;
+            }else {
+                count++;
+            }
+            Integer index = map.putIfAbsent(count, i);
+            if (index != null) {
+                ans = Math.max(ans, i - index + 1);
+            }
+        }
+        return ans;
+    }
+
+    public int findMaxLength2(int[] nums) {
         if (nums.length < 2) {
             return 0;
         }

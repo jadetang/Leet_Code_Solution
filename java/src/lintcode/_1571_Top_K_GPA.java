@@ -16,7 +16,7 @@ public class _1571_Top_K_GPA {
     PriorityQueue<Double> queue = new PriorityQueue<>(Comparator.naturalOrder());
     // Write your code here
     for (List<String> student : list) {
-      Double gpa = Double.parseDouble(student.get(1));
+      Double gpa = Double.parseDouble(student.  get(1));
       if (queue.size() < k) {
         queue.add(gpa);
       } else {

@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * @author jade on 2017/5/12 下午5:39
  */
-public class _282_Game_Of_Live {
+public class _289_Game_Of_Live {
 
 
   private int live = 1;
@@ -14,7 +14,7 @@ public class _282_Game_Of_Live {
   private int dead = 0;
 
   public static void main(String[] args) {
-    _282_Game_Of_Live g = new _282_Game_Of_Live();
+    _289_Game_Of_Live g = new _289_Game_Of_Live();
     int[][] x = new int[][]{{1, 1,}, {1, 0}};
     g.gameOfLife(x);
     System.out.println(x);

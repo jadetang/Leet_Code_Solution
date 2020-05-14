@@ -18,13 +18,13 @@ public class _843_Guess_the_Word {
         if (wordlist.isEmpty()) {
             return;
         }
-       String word = bestWord(wordlist);
-       int hit = master.guess(word);
-       if (hit == 6) {
-           return;
-       }
-       List<String> nextList = wordlist.stream().filter(s -> similarity(word, s) == hit).collect(Collectors.toList());
-       guess(nextList, master);
+        String word = bestWord(wordlist);
+        int hit = master.guess(word);
+        if (hit == 6) {
+            return;
+        }
+        List<String> nextList = wordlist.stream().filter(s -> similarity(word, s) == hit).collect(Collectors.toList());
+        guess(nextList, master);
     }
 
     private String bestWord(List<String> wordlist) {
@@ -36,12 +36,12 @@ public class _843_Guess_the_Word {
                 }
             }
         }
-        return similarityList.entrySet().stream().sorted( (e1, e2) -> {
+        return similarityList.entrySet().stream().sorted((e1, e2) -> {
             int maxSimilarity1 = IntStream.of(e1.getValue()).max().getAsInt();
             int maxSimilarity2 = IntStream.of(e2.getValue()).max().getAsInt();
             if (maxSimilarity1 == maxSimilarity2) {
                 return IntStream.of(e1.getValue()).sum() - IntStream.of(e2.getValue()).sum();
-            }else {
+            } else {
                 return maxSimilarity1 - maxSimilarity2;
             }
 
@@ -68,12 +68,13 @@ public class _843_Guess_the_Word {
     private String key(String left, String right) {
         if (left.compareTo(right) > 0) {
             return left + ":" + right;
-        }else {
+        } else {
             return right + ":" + left;
         }
     }
 
-    interface Master {
-         int guess(String word);
-     }
+
+  interface Master {
+    int guess(String word);
+  }
 }

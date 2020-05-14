@@ -26,7 +26,7 @@ public class _161_One_Edit_Distance {
             return false;
         }
         int i = 0;
-        for ( ;i < sL; i++) {
+        for ( ; i < sL; i++) {
             if (s.charAt(i) != t.charAt(i)) {
                 break;
             }

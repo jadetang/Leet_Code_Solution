@@ -1,67 +1,72 @@
 package leetcode;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import org.junit.Assert;
+import java.util.LinkedList;
+import java.util.Queue;
 import org.junit.Test;
+import util.Assert;
 
 public class _1088_Confusing_Number_II {
 
-    @Test
-    public void test() {
-        _1088_Confusing_Number_II q = new _1088_Confusing_Number_II();
-        Assert.assertEquals(389627, q.confusingNumberII(100000000));
+  int[] base = {0, 1, 6, 8, 9};
+  int[] reverse_board = {0, 1, -1, -1, -1, -1, 9, -1, 8, 6};
+
+  @Test
+  public void test() {
+    _1088_Confusing_Number_II q = new _1088_Confusing_Number_II();
+    Assert.assertEqual(6, q.confusingNumberII(20));
+  }
+
+  public int confusingNumberII(int N) {
+    int t = N;
+    int len = 0;
+    while (t > 0) {
+      t /= 10;
+      len++;
     }
-
-    List<Integer> list = List.of(0, 1, 6, 8, 9);
-
-    Map<Character, Character> mapping = Map.of('0', '0', '1', '1', '6', '9', '8', '8', '9', '6');
-
-    Set<Integer> set = new HashSet<>();
-
-    int maxDigital;
-
-    int n;
-
-    public int confusingNumberII(int n) {
-        this.n = n;
-        this.maxDigital = String.valueOf(n).length();
-        dfs(0, new HashSet<>());
-        return set.size();
+    int ans = 0;
+    if (len == 10) {
+      N -= 1;
+      ans = 1;
+      len -= 1;
     }
-
-    private void dfs(int currentDigit, Set<Integer> acc) {
-        if (currentDigit > maxDigital) {
-            return;
-        }
-        for (Integer integer : acc) {
-            if (isConfusing(integer) && integer >= 1 && integer <= n) {
-                set.add(integer);
+    Queue<Integer> queue = new LinkedList<>();
+    queue.offer(0);
+    int ori = 0;
+    for (int i = 0; i < len; i++) {
+      int size = queue.size();
+      while (size > 0) {
+        int base_i = queue.poll();
+        for (int j = 0; j < 5; j++) {
+          int cur = base[j];
+          if (i == 0 && cur == 0) {
+            continue;
+          }
+          //build
+          ori = base_i * 10 + cur;
+          if (ori <= N) {
+            //store
+            queue.offer(ori);
+            //reverse
+            int rev = reverse(ori);
+            //check
+            if (rev != ori) {
+              ans++;
             }
+          }
         }
-        for (Integer integer : list) {
-            Set<Integer> tempList = new HashSet<>();
-            if (acc.isEmpty()) {
-                tempList.add(integer);
-            }else {
-                for (Integer pre : acc) {
-                    tempList.add(pre * 10 + integer);
-                }
-            }
-            dfs(currentDigit  + 1, tempList);
-        }
+        size--;
+      }
     }
+    return ans;
+  }
 
-    private boolean isConfusing(Integer integer) {
-        String oldNumber = integer.toString();
-        StringBuilder sb = new StringBuilder();
-        for (char c : oldNumber.toCharArray()) {
-            sb.append(mapping.get(c));
-        }
-        return !sb.reverse().toString().equals(oldNumber);
+  public int reverse(int b) {
+    int a = 0;
+    while (b > 0) {
+      int bit = b % 10;
+      b /= 10;
+      a = a * 10 + reverse_board[bit];
     }
-
+    return a;
+  }
 }

@@ -1,25 +1,24 @@
 package leetcode;
 
-import java.util.stream.IntStream;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class _1000_Minimum_Cost_to_Merge_Stones {
 
+    int cost = 0;
+
     @Test
     public void test1() {
-        int[] stones = new int[] {3,5,1,2,6};
+        int[] stones = new int[]{3, 5, 1, 2, 6};
         _1000_Minimum_Cost_to_Merge_Stones q = new _1000_Minimum_Cost_to_Merge_Stones();
         Assert.assertEquals(25, q.mergeStones(stones, 3));
-        Assert.assertEquals(20, q.mergeStones(new int[]{3,2,4,1}, 2));
+        Assert.assertEquals(20, q.mergeStones(new int[]{3, 2, 4, 1}, 2));
     }
-
-    int cost = 0;
 
     public int mergeStones(int[] stones, int k) {
         cost = 0;
         int n = stones.length;
-        if ((n - 1 ) % (k - 1) != 0) {
+        if ((n - 1) % (k - 1) != 0) {
             return -1;
         }
         while (stones.length != 1) {
@@ -53,9 +52,9 @@ public class _1000_Minimum_Cost_to_Merge_Stones {
         for (int i = 0; i < stones.length; i++) {
             if (i >= left && i < right) {
                 continue;
-            }else if (i == right) {
+            } else if (i == right) {
                 newStore[index++] = minSum;
-            }else {
+            } else {
                 newStore[index++] = stones[i];
             }
         }

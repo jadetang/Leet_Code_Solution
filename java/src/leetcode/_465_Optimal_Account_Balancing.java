@@ -11,7 +11,7 @@ public class _465_Optimal_Account_Balancing {
     @Test
     public void test() {
         _465_Optimal_Account_Balancing q = new _465_Optimal_Account_Balancing();
-        int[][] transactions = new int[][] {{0,1,10},{2,0,5}};
+        int[][] transactions = new int[][]{{0, 1, 10}, {2, 0, 5}};
         q.minTransfers(transactions);
     }
 
@@ -34,7 +34,8 @@ public class _465_Optimal_Account_Balancing {
     }
 
     private int dfs(int k, List<Integer> list) {
-        if (k == list.size()) return 0;
+        if (k == list.size())
+            return 0;
         int cur = list.get(k);
         if (cur == 0) {
             return dfs(k + 1, list);
@@ -47,10 +48,10 @@ public class _465_Optimal_Account_Balancing {
                 list.set(i, cur + next);
                 min = Math.min(min, 1 + dfs(k + 1, list));
                 list.set(i, next);
-                if (cur + next == 0) break;
+                if (cur + next == 0)
+                    break;
             }
         }
         return min;
     }
-
 }

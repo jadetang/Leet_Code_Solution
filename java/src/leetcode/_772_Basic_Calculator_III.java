@@ -63,6 +63,4 @@ public class _772_Basic_Calculator_III {
         }
         return stack.stream().reduce(Integer::sum).get();
     }
-
-
 }

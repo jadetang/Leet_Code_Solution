@@ -15,6 +15,13 @@ public class _227_Basic_Calculator_II {
         Assert.assertEqual(46, q.calculate("46"));
     }
 
+    @Test
+    public void test2() {
+        _227_Basic_Calculator_II q = new _227_Basic_Calculator_II();
+        //  Assert.assertEqual(3, q.calculate("6 / 2"));
+        Assert.assertEqual(4, q.calculate("1 + 6 / 2"));
+    }
+
     public int calculate(String s) {
        Stack<Integer> stack = new Stack<>();
        char sign = '+';

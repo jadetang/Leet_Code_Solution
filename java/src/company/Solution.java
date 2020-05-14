@@ -1,38 +1,59 @@
 package company;
 
+import java.util.Stack;
+import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 class Solution {
-  int solution(int[] A) {
-    int n = A.length;
-    int result = 0;
-    for (int i = 0; i < n - 1; i++) {
-      if (A[i] == A[i + 1])
-        result = result + 1;
-    }
-    int r = 0;
-    for (int i = 0; i < n; i++) {
-      int count = 0;
-      if (i > 0) {
-        if (A[i - 1] != A[i])
-          count = count + 1;
-        else
-          count = count - 1;
+
+  public int solution(String s) {
+    s = eat(s, 'C');
+    s = eat(s, 'B');
+    s = eat(s, 'A');
+    return s.length();
+  }
+
+  public String eat(String fishes, char currentFish) {
+    Stack<Character> stack = new Stack<>();
+    for (int i = 0; i < fishes.length(); i++) {
+      char c = fishes.charAt(i);
+      if (c != currentFish) {
+        stack.push(c);
+      } else {
+        while (!stack.isEmpty() && canEat(currentFish, stack.peek())) {
+          stack.pop();
+        }
+        while (i + 1 < fishes.length() && canEat(currentFish, fishes.charAt(i + 1))) {
+          i++;
+        }
+        stack.push(c);
       }
-      if (i < n - 1) {
-        if (A[i + 1] != A[i])
-          count = count + 1;
-        else
-          count = count - 1;
-      }
-      r = Math.max(r, count);
     }
-    return result+r;
+    StringBuilder sb = new StringBuilder();
+    while (!stack.isEmpty()) {
+      sb.append(stack.pop());
+    }
+    return sb.reverse().toString();
+  }
+
+  private boolean canEat(char firstFish, char secondFish) {
+    if (firstFish == 'A' && (secondFish == 'B' || secondFish == 'C')) {
+      return true;
+    } else if (firstFish == 'B' && (secondFish == 'C' || secondFish == 'D')) {
+      return true;
+    } else if (firstFish == 'C' && secondFish == 'D') {
+      return true;
+    }
+    return false;
   }
 
   public static void main(String[] args) {
     Solution s = new Solution();
-    System.out.println(s.solution(new int[]{0,0}));
-    System.out.println(s.solution(new int[]{0}));
-    System.out.println(s.solution(new int[]{1,0,1}));
-    System.out.println(s.solution(new int[]{1,0}));
+
+    ExecutorService service = Executors.newSingleThreadExecutor();
+    System.out.println(s.solution("ABAD"));
+    System.out.println(s.solution("ACCDDA"));
+    System.out.println(s.solution(""));
   }
 }
