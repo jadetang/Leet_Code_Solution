@@ -59,6 +59,42 @@ public class _76_Minimum_Window_Substring {
     return d == Integer.MAX_VALUE ? "" : s.substring(head, head + d);
   }
 
+  public String minWindow2(String s, String t) {
+    Map<Character, Integer> map = new HashMap<>();
+    for (char c : t.toCharArray()) {
+      map.put(c, map.getOrDefault(c, 0) + 1);
+    }
+    int unmatched = t.length();
+    int r = 0;
+    int length = s.length() + 1;
+    String ans = "";
+    for (int i = 0; i < s.length(); i++) {
+      char c = s.charAt(i);
+      if (map.containsKey(c)) {
+        map.put(c, map.get(c) - 1);
+        if (map.get(c) >= 0) {
+          unmatched--;
+        }
+      }
+      while (unmatched == 0) {
+        int newLength = i - r + 1;
+        if (newLength < length) {
+          length = newLength;
+          ans = s.substring(r, i + 1);
+        }
+        c = s.charAt(r);
+        if (map.containsKey(c)) {
+          map.put(c, map.get(c) + 1);
+          if (map.get(c) > 0) {
+            unmatched++;
+          }
+        }
+        r++;
+      }
+    }
+    return ans;
+  }
+
   public static void main(String[] args) {
     System.out.println(minWindow("bba", "ab"));
   }
