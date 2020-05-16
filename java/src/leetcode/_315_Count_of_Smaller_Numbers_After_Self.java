@@ -44,23 +44,14 @@ public class _315_Count_of_Smaller_Numbers_After_Self {
     return list;
   }
 
-  public static void main(String[] args) {
-    FenwickTree tree = new FenwickTree(10);
-    tree.update(1, 10);
-    tree.update(2, 10);
-    System.out.println(tree.query(3));
-    tree.update(2, -5);
-    System.out.println(tree.query(3));
-  }
-
   @Test
   public void test() {
     _315_Count_of_Smaller_Numbers_After_Self q = new _315_Count_of_Smaller_Numbers_After_Self();
     int[] nums = new int[]{5, 2, 6, 1};
-    Assert.assertEquals(List.of(2, 1, 1, 0), q.countSmaller(nums));
+    Assert.assertEquals(List.of(2, 1, 1, 0), q.countSmaller3(nums));
   }
 
-  public List<Integer> countSmaller(int[] nums) {
+  public static List<Integer> countSmaller(int[] nums) {
     int[] sorted = Arrays.copyOf(nums, nums.length);
     Arrays.sort(sorted);
     Map<Integer, Integer> rank = new HashMap<>();
@@ -77,6 +68,21 @@ public class _315_Count_of_Smaller_Numbers_After_Self {
       int sum = fenwickTree.query(rank.get(nums[i]) - 1);
       ans.add(sum);
       fenwickTree.update(rank.get(nums[i]), 1);
+    }
+    Collections.reverse(ans);
+    return ans;
+  }
+
+  public static List<Integer> countSmaller3(int[] nums) {
+    int[] sorted = Arrays.copyOf(nums, nums.length);
+    Arrays.sort(sorted);
+
+    FenwickTree fenwickTree = new FenwickTree(sorted[sorted.length - 1]);
+    List<Integer> ans = new ArrayList<>();
+    for (int i = nums.length - 1; i >= 0; i--) {
+      int sum = fenwickTree.query(nums[i] - 1);
+      ans.add(sum);
+      fenwickTree.update(nums[i], 1);
     }
     Collections.reverse(ans);
     return ans;
@@ -106,6 +112,4 @@ public class _315_Count_of_Smaller_Numbers_After_Self {
       return sum;
     }
   }
-
-
 }

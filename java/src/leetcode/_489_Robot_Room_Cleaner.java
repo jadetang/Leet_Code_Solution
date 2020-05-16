@@ -1,74 +1,99 @@
 package leetcode;
 
-
 import java.util.HashSet;
 import java.util.Set;
 
 public class _489_Robot_Room_Cleaner {
 
-  Set<Long> visited = new HashSet<>();
+    Robot robot;
 
-  public void cleanRoom(Robot robot) {
-    dfs(robot, 0, 0);
-  }
+    Set<String> cache;
 
-  private void dfs(Robot robot, int i, int j) {
-    if (visited.contains((long) i << 32 + (long) j)) {
-      return;
+    enum Direction {
+        up, left, right, down
     }
-    visited.add((long) j << 32 + (long) i);
-    robot.turnLeft();
-    if (robot.move()) {
-      dfs(robot, i, j - 1);
-      robot.turnRight();
-      robot.turnRight();
-      robot.move();
-      robot.turnLeft();
-      robot.turnLeft();
+
+    public void cleanRoom(Robot robot) {
+        this.robot = robot;
+        this.cache = new HashSet<>();
+        dfs(0, 0, Direction.up);
     }
-    robot.turnLeft();
-    if (robot.move()) {
-      dfs(robot, i + 1, j);
-      robot.turnRight();
-      robot.turnRight();
-      robot.move();
-      robot.turnLeft();
-      robot.turnLeft();
+
+    private void dfs(int i, int j, Direction direction) {
+        if (cache.contains(i + ":" + j)) {
+            return;
+        }
+        cache.add(i + ":" + j);
+        robot.clean();
+        for (int k = 0; k < 4; k++) {
+            if (robot.move()) {
+                int nextI = nextI(i, direction);
+                int nextj = nextJ(j, direction);
+                dfs(nextI, nextj, nextDirection(direction));
+                moveBack();
+            }
+            robot.turnRight();
+            direction = nextDirection(direction);
+        }
     }
-    robot.turnLeft();
-    if (robot.move()) {
-      dfs(robot, i, j + 1);
-      robot.turnRight();
-      robot.turnRight();
-      robot.move();
-      robot.turnLeft();
-      robot.turnLeft();
+
+    private void moveBack() {
+        robot.turnRight();
+        robot.turnRight();
+        robot.move();
+        robot.turnLeft();
+        robot.turnLeft();
     }
-    robot.turnLeft();
-    if (robot.move()) {
-      dfs(robot, i - 1, j);
-      robot.turnRight();
-      robot.turnRight();
-      robot.move();
-      robot.turnLeft();
-      robot.turnLeft();
+
+    private Direction nextDirection(Direction direction) {
+        switch (direction) {
+            case up:
+                return Direction.right;
+            case right:
+                return Direction.down;
+            case down:
+                return Direction.left;
+            case left:
+                return Direction.up;
+            default:
+                throw new RuntimeException();
+        }
     }
-  }
 
-  interface Robot {
+    private int nextI(int i, Direction direction) {
+        if (direction == Direction.up) {
+            return i - 1;
+        }
+        if (direction == Direction.down) {
+            return i + 1;
+        }
+        return i;
+    }
 
-    // Returns true if the cell in front is open and robot moves into the cell.
-    // Returns false if the cell in front is blocked and robot stays in the current cell.
-    public boolean move();
+    private int nextJ(int j, Direction direction) {
+        if (direction == Direction.left) {
+            return j - 1;
+        }
+        if (direction == Direction.right) {
+            return j + 1;
+        }
+        return j;
+    }
 
-    // Robot will stay in the same cell after calling turnLeft/turnRight.
-    // Each turn will be 90 degrees.
-    public void turnLeft();
 
-    public void turnRight();
+    interface Robot {
 
-    // Clean the current cell.
-    public void clean();
-  }
+        // Returns true if the cell in front is open and robot moves into the cell.
+        // Returns false if the cell in front is blocked and robot stays in the current cell.
+        public boolean move();
 
+        // Robot will stay in the same cell after calling turnLeft/turnRight.
+        // Each turn will be 90 degrees.
+        public void turnLeft();
+
+        public void turnRight();
+
+        // Clean the current cell.
+        public void clean();
+    }
 }

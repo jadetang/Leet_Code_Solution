@@ -2,6 +2,7 @@ package solution;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.PriorityQueue;
 
@@ -80,29 +81,25 @@ public class _1334_Find_City {
 
         int[] distance;
 
-        boolean[] visited;
+   //     boolean[] visited;
 
         PriorityQueue<Integer> queue;
 
         public Dijkstra(Graph g, int from) {
             distance = new int[g.n];
-            visited = new boolean[g.n];
+         //   visited = new boolean[g.n];
             Arrays.fill(distance, Integer.MAX_VALUE);
             distance[from] = 0;
-            queue = new PriorityQueue<>((i1, i2) -> {
-                return distance[i1] - distance[i2];
-            });
+            queue = new PriorityQueue<>(Comparator.comparingInt(i -> distance[i]));
             queue.offer(from);
-            visited[from] = true;
+      //      visited[from] = true;
             while (!queue.isEmpty()) {
                 int current = queue.poll();
                 for (Edge e : g.edges(current)) {
                     int w = e.to;
                     if (distance[w] > distance[current] + e.value) {
                         distance[w] = distance[current] + e.value;
-                        if (queue.contains(w)) {
-                            queue.remove(w);
-                        }
+                        queue.remove(w);
                         queue.offer(w);
                     }
                 }
