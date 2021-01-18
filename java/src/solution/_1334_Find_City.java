@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
 import java.util.PriorityQueue;
+import java.util.TreeSet;
 
 public class _1334_Find_City {
 
@@ -81,26 +82,29 @@ public class _1334_Find_City {
 
         int[] distance;
 
-   //     boolean[] visited;
-
         PriorityQueue<Integer> queue;
+
+        TreeSet<Integer> set;
 
         public Dijkstra(Graph g, int from) {
             distance = new int[g.n];
-         //   visited = new boolean[g.n];
             Arrays.fill(distance, Integer.MAX_VALUE);
             distance[from] = 0;
-            queue = new PriorityQueue<>(Comparator.comparingInt(i -> distance[i]));
-            queue.offer(from);
-      //      visited[from] = true;
-            while (!queue.isEmpty()) {
-                int current = queue.poll();
+        //    queue = new PriorityQueue<>(Comparator.comparingInt(i -> distance[i]));
+            set = new TreeSet<>(Comparator.comparingInt(i -> distance[i]));
+          //  queue.offer(from);
+            set.add(from);
+         //   while (!queue.isEmpty()) {
+            while (!set.isEmpty()) {
+                int current = set.pollFirst();
                 for (Edge e : g.edges(current)) {
                     int w = e.to;
                     if (distance[w] > distance[current] + e.value) {
                         distance[w] = distance[current] + e.value;
-                        queue.remove(w);
-                        queue.offer(w);
+                     //   queue.remove(w);
+                        set.remove(w);
+                      //  queue.offer(w);
+                        set.add(w);
                     }
                 }
             }

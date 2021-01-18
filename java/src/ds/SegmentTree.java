@@ -72,7 +72,6 @@ public class SegmentTree {
         }
     }
 
-
     public static class SegmentTreeNode {
 
         public SegmentTreeNode(int start, int end, int val) {

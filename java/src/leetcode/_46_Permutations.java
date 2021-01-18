@@ -15,7 +15,8 @@ public class _46_Permutations {
 
   public static void main(String[] args) {
     _46_Permutations q = new _46_Permutations();
-    System.out.println(q.permute(new int[]{0, 0, 0, 7, 8, 9}));
+    System.out.println(q.permute(new int[]{1, 1, 2}));
+    System.out.println(q.permute2(new int[]{1, 1, 2}));
   }
 
   public List<List<Integer>> permute(int[] nums) {
@@ -27,7 +28,6 @@ public class _46_Permutations {
   private void help(List<List<Integer>> acc, int[] nums, int l, int r) {
     if (l == r) {
       List<Integer> temp = IntStream.of(nums).boxed().collect(Collectors.toList());
-      System.out.println(temp);
       acc.add(temp);
     } else {
       for (int i = l; i <= r; i++) {

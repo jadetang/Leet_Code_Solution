@@ -8,6 +8,8 @@ public class Interval {
   public int start;
   public int end;
 
+  public String label;
+
   public Interval() {
     start = 0;
     end = 0;
@@ -16,6 +18,12 @@ public class Interval {
   public Interval(int s, int e) {
     start = s;
     end = e;
+  }
+
+  public Interval(int s, int e, String label) {
+    start = s;
+    end = e;
+    this.label = label;
   }
 
   @Override

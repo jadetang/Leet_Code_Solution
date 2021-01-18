@@ -1,7 +1,6 @@
 package leetcode;
 
 import java.util.TreeSet;
-import org.jetbrains.annotations.NotNull;
 import org.junit.Test;
 import util.Assert;
 
@@ -27,7 +26,6 @@ public class _1414_Find_the_Minimum_Number_of_Fibonacci_Numbers_Whose_Sum_Is_K {
     return ans;
   }
 
-  private @NotNull
   TreeSet allFNumbers(int k) {
     TreeSet<Integer> treeSet = new TreeSet<>();
     int f1 = 1;

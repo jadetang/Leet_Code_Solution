@@ -24,6 +24,7 @@ public class QuickDisjointSet {
 
   public int find(int p) {
     while (id[p] != p) {
+      id[p] = id[id[p]];
       p = id[p];
     }
     return p;
